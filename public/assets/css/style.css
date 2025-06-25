@@ -108,7 +108,7 @@ html {
         background-position: 0% 50%;
     }
 }
-.nav-item{
+.nav-item {
     margin: 0 25px;
 }
 @keyframes animationGradient {
@@ -156,7 +156,6 @@ html {
     top: 8%;
     will-change: transform;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -1624,452 +1623,53 @@ footer .box-icons a:hover {
     display: flex;
 }
 
-@media (max-width: 768px) {
-    header ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-@media (max-width: 576px) {
-    .hamburger span {
-        width: 20px;
-    }
-    .mobile-nav a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 400px) {
-    .mobile-nav a {
-        font-size: 14px;
-    }
-}
-
-/* Other responsive adjustments */
-@media (max-width: 1200px) {
-    .container,
-    .features-section,
-    .generative-section,
-    .chatApp-section,
-    .roadmap-section,
-    footer {
-        padding: 0 20px;
-    }
-    .hero-image-box {
-        width: 95%;
-    }
-    .features-card {
-        width: 45%;
-    }
-    .chatApp-section {
-        flex-direction: column;
-    }
-    .chatApp-section .left-container,
-    .chatApp-section .right-container {
-        width: 100%;
-        margin: 20px 0;
-        padding: 0 10px;
-    }
-    .generative-section .grid-box {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 992px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-    header .head-left {
-        margin-bottom: 10px;
-    }
-    .hero h1 {
-        font-size: 36px;
-        padding: 0 10px;
-    }
-    .hero h3 {
-        font-size: 18px;
-        padding: 0 10px;
-    }
-    .hero button {
-        width: 100px;
-        height: 40px;
-    }
-    .features-card {
-        width: 100%;
-        min-width: unset;
-    }
-    .features-section h1,
-    .generative-section h1 {
-        font-size: 36px;
-    }
-    .generative-section .grid-box .grid-card .info h2 {
-        font-size: 48px;
-    }
-    .generative-section .grid-box .grid-card .info h4 {
-        font-size: 18px;
-    }
-    .generative-section .grid-box .grid-card .info p {
-        font-size: 16px;
-    }
-    .roadmap-section .roadmap-card {
-        width: 85%;
-    }
-    footer h1 {
-        font-size: 20px;
-    }
-    footer .box-icons a {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 30px;
-    }
-    .hero h3 {
-        font-size: 16px;
-    }
-    .hero-image-box {
-        height: auto;
-    }
-    .features-section h1 {
-        font-size: 30px;
-    }
-    .chatApp-section .left-container h1,
-    .generative-section h1 {
-        font-size: 32px;
-    }
-    .chatApp-section .left-container p {
-        font-size: 16px;
-    }
-    .chatApp-section .left-container h2,
-    .generative-section .grid-box .grid2 p,
-    .generative-section .grid-box .grid2 h1 {
-        font-size: 14px;
-    }
-    .roadmap-section .roadmap-card h2 {
-        font-size: 30px;
-    }
-    .roadmap-section .roadmap-card p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 24px;
-    }
-    .hero h3 {
-        font-size: 14px;
-    }
-    .features-section h1,
-    .generative-section h1 {
-        font-size: 26px;
-    }
-    .features-card h2 {
-        font-size: 22px;
-    }
-    .features-card p {
-        font-size: 14px;
-    }
-    .chatApp-section .left-container h1 {
-        font-size: 28px;
-    }
-    .chatApp-section .left-container p,
-    .chatApp-section .left-container h2 {
-        font-size: 14px;
-    }
-    .generative-section .grid-box .grid-card .info h2 {
-        font-size: 28px;
-    }
-    .generative-section .grid-box .grid-card .info h4 {
-        font-size: 14px;
-    }
-    .roadmap-section .roadmap-card {
-        width: 95%;
-    }
-    footer {
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    header {
-        justify-content: center;
-        padding: 5px 0;
-        height: 10%;
-    }
-
-    header .head-left {
-        width: 35px;
-        height: 100%;
-    }
-
-    header .head-left img {
-        width: 35px;
-        height: 35px;
-        margin: 0 5px;
-    }
-    header ul li {
-        display: inline-block;
-        list-style: none;
-    }
-    header ul li a {
-        text-decoration: none;
-        color: lightgray;
-        padding: 15px 30px;
-        /* margin: 0 15px; */
-        cursor: pointer;
-        font-size: 15px;
-    }
-    .button-box {
-        position: relative;
-        width: 100px;
-        height: 45px;
-        margin-left: 25px;
-        border-radius: 10px;
-        background: linear-gradient(
-            to right,
-            #00aaa7,
-            #7f42a7,
-            #6600c5,
-            #1f2b9c,
-            #0099ff,
-            #00aaa7
-        );
-        background-size: 200%;
-        animation: animationGradient 2.5s linear infinite;
-        clip-path: polygon(
-            0 0,
-            80% 0%,
-            100% 20%,
-            100% 80%,
-            100% 99%,
-            0 100%,
-            0% 80%,
-            0% 20%
-        );
-    }
-
-    .head-right button {
-        position: absolute;
-        inset: 3px 3px 3px 3px;
-        border: none;
-        background-color: rgb(14 12 21);
-        color: lightgray;
-        border-radius: 10px;
-        cursor: pointer;
-        clip-path: polygon(
-            0 0,
-            80% 0%,
-            100% 20%,
-            100% 80%,
-            100% 99%,
-            0 100%,
-            0% 80%,
-            0% 20%
-        );
-        transition: 0.3s;
-    }
-
-    .head-right button:hover {
-        color: #7e00d2;
-    }
-
-    @keyframes animationGradient {
-        to {
-            background-position: 200%;
-        }
-    }
-
+@media only screen and (min-width: 300px) and (max-width: 500px) {
     .hero {
-        height: 100vh;
+        height: 75vh;
+    }
+    .hero-blur-image {
+        width: 100%;
+        top: 10%;
     }
 
     .hero-rings-image {
-        position: absolute;
         height: 90%;
-        top: 90px;
-        opacity: 0.4;
-        animation: rotate360 4s linear infinite;
+        top: 45px;
     }
-
-    @keyframes rotate360 {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    .hero-icons-image {
-        width: 100%;
-        position: absolute;
-        top: 8%;
-    }
-
     .hero h1 {
-        position: absolute;
-        top: 10%;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        font-size: 50px;
-        max-width: 1000px;
-        text-align: center;
-        color: white;
+        top: 15%;
+        font-size: 10px;
+        max-width: 700px;
     }
 
     .hero h3 {
-        position: absolute;
-        top: 22%;
-        font-size: 20px;
-        max-width: 700px;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        text-align: center;
-        color: gray;
+        top: 20%;
+        font-size: 10px;
+        max-width: 200px;
     }
 
     .hero button {
-        position: absolute;
-        top: 40%;
-        border: none;
-        background-color: white;
-        color: black;
-        border-radius: 10px;
+        top: 30%;
         width: 120px;
-        height: 50px;
-        cursor: pointer;
-        font-weight: bold;
-        clip-path: polygon(
-            0 0,
-            80% 0%,
-            100% 20%,
-            100% 80%,
-            100% 99%,
-            0 100%,
-            0% 80%,
-            0% 20%
-        );
-        transition: 0.3s;
-    }
-
-    .hero button:hover {
-        opacity: 0.7;
-        color: #7e00d2;
+        height: 30px;
     }
 
     .hero-image-box {
-        margin-top: 550px;
-        position: relative;
-        width: 1000px;
-        height: 550px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50px;
-        background: linear-gradient(
-            to right,
-            #00aaa7,
-            #7f42a7,
-            #6600c5,
-            #1f2b9c,
-            #0099ff,
-            #00aaa7
-        );
-        background-size: 200%;
-        animation: animationGradient 2.5s linear infinite;
+        margin-top: 50px;
+        width: 75%;
+        height: 150px;
+        border-radius: 5px;
     }
 
     .hero-image-box .robot-box {
-        width: 98.5%;
-        height: 98%;
-        overflow: hidden;
-        position: relative;
-        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 
     .hero-image-box .robot-box img {
         width: 100%;
         height: 100%;
         mix-blend-mode: hard-light;
-    }
-
-    /* .hero-image-box .robot-box .robot-header{
-        width: 30px;
-        height: 100%;
-        background-color: rgba(0,0,0,0.3);
-        backdrop-filter: blur(10px);
-    } */
-
-    .hero-image-box .element1 {
-        position: absolute;
-        top: 25%;
-        right: -15%;
-        backdrop-filter: blur(10px);
-        width: 25%;
-        border-radius: 15px;
-    }
-
-    .hero-image-box .element1 img {
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.43);
-    }
-
-    .hero-image-box .element2 {
-        position: absolute;
-        top: 75%;
-        left: -15%;
-        backdrop-filter: blur(10px);
-        width: 25%;
-        border-radius: 15px;
-    }
-
-    .hero-image-box .element2 img {
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.43);
-    }
-
-    .parallax {
-        transition: transform 1s linear;
-    }
-
-    .hero h4 {
-        position: absolute;
-        bottom: 8%;
-        color: gray;
-    }
-
-    .companies-list {
-        display: flex;
-        position: absolute;
-        bottom: 2%;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .companies-list .company {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .companies-list .company img {
-        height: 50px;
-        margin-right: 10px;
-    }
-
-    .companies-list .company p {
-        font-size: 30px;
-        font-weight: bold;
-        margin-right: 100px;
     }
 }

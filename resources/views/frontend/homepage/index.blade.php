@@ -1,6 +1,8 @@
 @extends('frontend.layout.main')
 
 @section('website-main-section')
+
+
     <section class="hero">
         <img class="hero-blur-image" src="images/hero blur img.png" alt="">
         <img class="hero-icons-image parallax" data-speed="4" src="images/hero icons img2.png" alt="">
