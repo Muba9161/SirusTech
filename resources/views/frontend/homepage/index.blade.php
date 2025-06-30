@@ -31,16 +31,16 @@
 
         <div class="companies-list">
             <div class="company">
-                <img src="images/company1.png" alt="">
-                <p>Memic</p>
-                <img src="images/company2.png" alt="">
-                <p>Memic</p>
-                <img src="images/company3.png" alt="">
-                <p>Memic</p>
-                <img src="images/company4.png" alt="">
-                <p>Memic</p>
-                <img src="images/company5.png" alt="">
-                <p>Memic</p>
+                <img src="images/html.png" alt="">
+                <p>HTML</p>
+                <img src="images/css.png" alt="">
+                <p>CSS</p>
+                <img src="images/js.png" alt="">
+                <p>JavaScript</p>
+                <img src="images/python.png" alt="">
+                <p>Python</p>
+                <img src="images/java.png" alt="">
+                <p>Java</p>
             </div>
         </div>
     </section>
@@ -189,45 +189,45 @@
 
         <div class="roadmap-cards-box">
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-1.png" alt="">
+                <img src="images/Widblock.jpg" alt="">
                 <h2>Wid blocks</h2>
                 <p>Hands-on robotics training using WitBlox kits. Includes pictures, project demos, and interactive content.
                 </p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-2.png" alt="">
+                <img src="images/IOT image.png" alt="">
                 <h2>IOT</h2>
                 <p>Learn IoT fundamentals through curated YouTube tutorials, real-world examples, and project ideas.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-3.png" alt="">
+                <img src="images/AI image.png" alt="">
                 <h2>AI</h2>
                 <p>Intro to AI concepts with visual explanations and examples. Includes images and beginner-friendly
                     content.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-4.png" alt="">
+                <img src="images/arduino.png" alt="">
                 <h2>Arduino</h2>
                 <p>Basics of Arduino with YouTube-guided tutorials, example projects, and illustrated components.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-3.png" alt="">
+                <img src="images/cyber security image.png" alt="">
                 <h2>Cyber Security</h2>
                 <p>Introduction to cyber threats, data protection, and safe practices online for all age groups.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-4.png" alt="">
+                <img src="images/raspberry.png" alt="">
                 <h2>Raspberry Pi</h2>
                 <p>Get started with Raspberry Pi using step-by-step YouTube resources and beginner projects.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-3.png" alt="">
+                <img src="images/ad.png" alt="">
                 <h2>App Development</h2>
                 <p>Hands-on training to help you learn mobile app development from scratch, covering both Android and iOS
                     platforms with practical projects.</p>
             </div>
             <div class="roadmap-card autoBlur">
-                <img src="images/roadmap-4.png" alt="">
+                <img src="images/pd.png" alt="">
                 <h2>Personality Development</h2>
                 <p>Soft skills training covering communication, confidence building, and personal growth.</p>
             </div>
