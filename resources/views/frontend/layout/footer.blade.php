@@ -2,10 +2,10 @@
     <h1>&copy; 2025, Made by Muba Khan</h1>
 
     <div class="box-icons">
-        <a href=""><i class="bx bx1-youtube"></i></a>
-        <a href=""><i class="bx bx1-youtube"></i></a>
-        <a href=""><i class="bx bx1-youtube"></i></a>
-        <a href=""><i class="bx bx1-youtube"></i></a>
+        <a href=""><i class="fas fa-youtube"></i></a>
+        <a href=""><i class="fas fa-youtube"></i></a>
+        <a href=""><i class="fas fa-youtube"></i></a>
+        <a href=""><i class="fas fa-youtube"></i></a>
     </div>
 </footer>
 
@@ -42,9 +42,87 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('../assets/scripts/logic.js') }}"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleBtn = document.getElementById("toggleButtons");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", () => {
+            body.classList.toggle("show-buttons");
+        });
+    });
+
+    // When the button is clicked, scroll to the top smoothly
+    goTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const chatbotBtn = document.getElementById("chatbotBtn");
+        const chatbox = document.getElementById("chatbox");
+        const closeChatbox = document.getElementById("closeChatbox");
+        const chatInput = document.getElementById("chatInput");
+        const chatMessages = document.getElementById("chatbox-messages");
+
+        // Show chatbox
+        chatbotBtn.addEventListener("click", () => {
+            chatbox.style.display = "flex";
+        });
+
+        // Hide chatbox
+        closeChatbox.addEventListener("click", () => {
+            chatbox.style.display = "none";
+        });
+
+        // Handle Enter key to send message
+        chatInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && chatInput.value.trim() !== "") {
+                const userMessage = chatInput.value.trim();
+                appendMessage("You", userMessage);
+                chatInput.value = "";
+
+                // Optional: bot response
+                setTimeout(() => {
+                    appendMessage(
+                        "Robot",
+                        "I'm just a simple bot 🤖. How can I assist?"
+                    );
+                }, 600);
+            }
+        });
+
+        function appendMessage(sender, text) {
+            const msg = document.createElement("div");
+            msg.classList.add("chat-message");
+            msg.classList.add(sender === "You" ? "user-message" : "bot-message");
+            msg.innerHTML = `<span>${text}</span>`;
+            chatMessages.appendChild(msg);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    });
+
+    // Get the button
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    // When the user scrolls down 100px from the top, show the button
+    window.onscroll = function() {
+        if (
+            document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100
+        ) {
+            goTopBtn.style.display = "block";
+        } else {
+            goTopBtn.style.display = "none";
+        }
+    };
+</script>
 
 </body>
-<script src="{{ asset('../assets/scripts/logic.js') }}"></script>
 
 
 </html>

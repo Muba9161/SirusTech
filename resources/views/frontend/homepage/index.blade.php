@@ -1,16 +1,13 @@
 @extends('frontend.layout.main')
 
 @section('website-main-section')
-
-
     <section class="hero">
         <img class="hero-blur-image" src="images/hero blur img.png" alt="">
         <img class="hero-icons-image parallax" data-speed="4" src="images/hero icons img2.png" alt="">
         <img class="hero-rings-image" src="images/hero rings icon.png" alt="">
 
-        <h1>Discover the concepts <br> of AI with SirusTech</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure porro, sunt tempore laboriosam sit labore facilis!
-            Odio tempora illo animi iste eos iusto. Molestiae, illum.</h3>
+        <h1>Code. Learn. Evolve.</h1>
+        <h3>Where tech meets talent, <br> learning levels you up.</h3>
 
         <button>Get Started</button>
 
@@ -29,7 +26,7 @@
             </div>
         </div>
 
-        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, assumenda!</h4>
+        <h4>Your journey to tech excellence starts here!</h4>
 
         <div class="companies-list">
             <div class="company">
@@ -49,46 +46,47 @@
 
     <section class="generative-section" id="about">
         <h1>About SirusTech</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reiciendis.</p>
+        <p>We deliver smart digital solutions that drive business growth while equipping individuals with in-demand tech
+            skills.</p>
 
         <div class="grid-box">
             <div class="grid-card grid1 autoBlur">
                 <img src="images/service-21.png" alt="" class="grid1-robot-img">
                 <div class="info">
-                    <h2>Smartest AI </h2>
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                    <p><img src="images/Check circle.png" alt="">Online Classes</p>
-                    <p><img src="images/Check circle.png" alt="">Video Lessons</p>
-                    <p><img src="images/Check circle.png" alt="">Hands on Learning</p>
+                    <h2>Code Together. Grow Together.</h2>
+                    <p><img src="images/Check circle.png" alt="">Direct Mentorship. Focused Growth</p>
+                    <p><img src="images/Check circle.png" alt="">Build Skills by Working on Real-Time Projects</p>
+                    <p><img src="images/Check circle.png" alt="">Turn Curiosity into Creation with Our Robotics Kit
+                    </p>
                 </div>
             </div>
             <div class="grid-card grid2 autoBlur">
                 <img src="images/service-2.png" alt="">
-                <div>
+                {{-- <div>
                     <h2>Hey SirusTech, Enhance my knowledg </h2>
-                </div>
+                </div> --}}
 
-                <h1>Digital AI</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quo modi in, enim corporis
-                    eligendi.</p>
+                <h1>Websites that Tell Your Story</h1>
+                <p>Sirustech is a visionary tech company bridging the gap between powerful software development and
+                    future-ready education.</p>
             </div>
             <div class="grid-card grid3 autoBlur">
                 <div class="info">
-                    <h2>Video Classes</h2>
-                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, quidem!</h4>
+                    <h2>Learn Anywhere. Grow Everywhere</h2>
+                    <h4>Flexible learning, powerful results. Join online, learn for life.</h4>
 
                     <div class="info-icons">
                         <div class="icon">
-                            <i class="bx bx-video"></i>
+                            <i class="fas fa-video"></i>
                         </div>
                         <div class="icon">
-                            <i class="bx bx-video"></i>
+                            <i class="fas fa-globe"></i>
                         </div>
                         <div class="icon">
-                            <i class="bx bx-video"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="icon">
-                            <i class="bx bx-video"></i>
+                            <i class="fas fa-medal"></i>
                         </div>
                     </div>
                 </div>
@@ -98,11 +96,12 @@
             <div class="grid-card grid4 autoBlur">
                 <img src="images/service-4.png" alt="" class="grid4-robot-img">
                 <div class="info">
-                    <h2>Smartest AI</h2>
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                    <p><img src="images/Check circle.png" alt="">Photo Generation</p>
-                    <p><img src="images/Check circle.png" alt="">Photo Generation</p>
-                    <p><img src="images/Check circle.png" alt="">Photo Generation</p>
+                    <h2>Speak Smart. Think Sharp. Lead Strong</h2>
+                    <p><img src="images/Check circle.png" alt="">Speak Smart: Speak with style, sway with substance
+                    </p>
+                    <p><img src="images/Check circle.png" alt="">Think Sharp: Quick mind, confident vibe</p>
+                    <p><img src="images/Check circle.png" alt="">Lead Strong: Stand tall. Lead loud. Shine bright
+                    </p>
                 </div>
             </div>
         </div>
@@ -123,7 +122,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature1.png" alt="">
-                    <a href="#">Explore More <i class='bx  bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -134,7 +133,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature1.png" alt="">
-                    <a href="#">Explore More <i class='bx bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -145,7 +144,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature2.png" alt="">
-                    <a href="#">Explore More <i class='bx  bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -156,7 +155,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature3.png" alt="">
-                    <a href="#">Explore More <i class='bx  bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -167,7 +166,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature4.png" alt="">
-                    <a href="#">Explore More <i class='bx  bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -178,7 +177,7 @@
 
                 <div class="explore-more">
                     <img src="images/feature1.png" alt="">
-                    <a href="#">Explore More <i class='bx bx-link'></i></a>
+                    <a href="#">Explore More <i class='fas fa-link'></i></a>
                 </div>
 
                 <img class="features-back-img" src="images/features back img.gif" alt="">
@@ -253,11 +252,11 @@
 
             <p class="fadeInLeft"><img src="images/Check circle.png" alt="">Stuning Projects</p>
 
-            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">WorldWide Accuracy</p>
+            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">Expert-Led Training</p>
 
-            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">WorldWide Accuracy</p>
+            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">Practical, Real-World Learning</p>
 
-            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">WorldWide Accuracy</p>
+            <p class="fadeInLeft"><img src="images/Check circle.png" alt="">Personalized Growth Journey</p>
 
 
             <div class="button-box fadeInLeft">
@@ -267,8 +266,9 @@
 
 
         <div class="right-container">
-            <h2 class="fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum molestiae maiores ex
-                fugiat at ipsa optio ut similique amet.</h2>
+            <h2 class="fadeInRight">We blend skills with confidence and learning with real-life impact.
+                Our trainers don’t lecture, they ignite transformation.
+                Because you deserve more than just a course, you deserve a breakthrough.</h2>
 
             <img src="images/tools group.png" alt="" class="fadeInRight">
         </div>
@@ -313,7 +313,7 @@
 
     {{-- <div class="testimonial-carousel">
         <div class="testimonial-wrapper">
-            @foreach($testimonials as $index => $testimonial)
+            @foreach ($testimonials as $index => $testimonial)
             <div class="testimonial-card {{ $index === 0 ? 'active' : '' }}">
                 <p>"{{ $testimonial->message }}"</p>
                 <div class="testimonial-author">- {{ $testimonial->author }}</div>
@@ -324,7 +324,7 @@
     {{-- <section id="feedback-section">
         <h2>Share Your Experience with Us</h2>
 
-        @if(session('success'))
+        @if (session('success'))
             <p style="color: green;">{{ session('success') }}</p>
         @endif
 
@@ -361,7 +361,7 @@
         <h1 class="contact-title">Contact SirusTech</h1>
         <p class="contact-subtitle">We're here to talk robots, AI, and innovation. Drop us a message.</p>
 
-        @if(session('success'))
+        @if (session('success'))
             <p class="contact-status" style="color: #00ffc3;">{{ session('success') }}</p>
         @endif
 
@@ -372,17 +372,23 @@
             <div class="form-group">
                 <input type="text" class="contact-input" id="name" name="name" required placeholder=" " />
                 <label for="name" class="contact-label">Your Name</label>
-                @error('name') <small style="color: red;">{{ $message }}</small> @enderror
+                @error('name')
+                    <small style="color: red;">{{ $message }}</small>
+                @enderror
             </div>
             <div class="form-group">
                 <input type="email" class="contact-input" id="email" name="email" required placeholder=" " />
                 <label for="email" class="contact-label">Your Email</label>
-                @error('email') <small style="color: red;">{{ $message }}</small> @enderror
+                @error('email')
+                    <small style="color: red;">{{ $message }}</small>
+                @enderror
             </div>
             <div class="form-group">
                 <textarea class="contact-textarea" id="message" name="message" rows="5" required placeholder=" "></textarea>
                 <label for="message" class="contact-label">Your Message</label>
-                @error('message') <small style="color: red;">{{ $message }}</small> @enderror
+                @error('message')
+                    <small style="color: red;">{{ $message }}</small>
+                @enderror
             </div>
             <button type="submit" class="contact-button">Send Message</button>
         </form>
@@ -398,6 +404,4 @@
             </iframe>
         </div>
     </section> --}}
-
-
 @endsection
