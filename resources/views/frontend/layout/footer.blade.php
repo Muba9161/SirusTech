@@ -1,16 +1,16 @@
-<footer>
-    <h1>&copy; 2025, Made by Muba Khan</h1>
+<footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <h1 class="mb-2 mb-md-0 text-white fs-6 order-2 order-md-1">&copy; 2025, Made by Muba Khan</h1>
 
-    <div class="box-icons">
-        <a href=""><i class="fas fa-youtube"></i></a>
-        <a href=""><i class="fas fa-youtube"></i></a>
-        <a href=""><i class="fas fa-youtube"></i></a>
-        <a href=""><i class="fas fa-youtube"></i></a>
+        <div class="box-icons d-flex justify-content-center order-1 order-md-2 mb-3 mb-md-0">
+            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
 </footer>
 
-
-</div>
 <!-- Toggle Button -->
 <button id="toggleButtons" title="Toggle Buttons">⚙️</button>
 
