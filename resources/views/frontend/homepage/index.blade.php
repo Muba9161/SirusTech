@@ -44,7 +44,6 @@
                     <div class="slide"><img src="images/python.png" alt="Python" /></div>
                     <div class="slide"><img src="images/java.png" alt="Java" /></div>
 
-
                     <div class="slide"><img src="images/html.png" alt="HTML" /></div>
                     <div class="slide"><img src="images/css.png" alt="CSS" /></div>
                     <div class="slide"><img src="images/js.png" alt="JS" /></div>
@@ -353,7 +352,7 @@
                         Our trainers don’t lecture, they ignite transformation. <br>
                         Because you deserve more than just a course — you deserve a breakthrough.
                     </h2>
-                    <img src="{{ asset('images/tools group.png')}}" alt="Tools Group" class="img-fluid mt-3 rotating-image"
+                    <img src="images/tools group.png" alt="Tools Group" class="img-fluid mt-3 rotating-image"
                         style="max-width: 100%;">
                 </div>
 

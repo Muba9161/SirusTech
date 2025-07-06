@@ -1026,10 +1026,10 @@ footer .box-icons a:hover {
     cursor: pointer;
     background-color: #333;
     box-shadow: 0 0 15px #333;
-    z-index: 1;
+    z-index: 5;
 }
 #goTopBtn {
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -1047,7 +1047,7 @@ footer .box-icons a:hover {
     transition-delay: 0s;
 }
 #chatbotBtn {
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     bottom: 160px;
     right: 20px;
@@ -1064,7 +1064,7 @@ footer .box-icons a:hover {
     box-shadow: 0 0 15px #ffe600;
 }
 #whatsappBtn {
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     bottom: 235px;
     right: 26px;
@@ -1191,18 +1191,6 @@ footer .box-icons a:hover {
 .slider-wrapper {
     position: relative;
     width: 100%;
-}
-.rotating-image {
-    animation: scroll 20s linear infinite, rotate 10s linear infinite;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .slider {
