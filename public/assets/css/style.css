@@ -1188,6 +1188,52 @@ footer .box-icons a:hover {
     pointer-events: none;
     animation: pulse-glow 2s infinite alternate;
 }
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+.rotating-image {
+    animation: scroll 20s linear infinite, rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100px; /* adjust icon size */
+    margin: 0 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 @keyframes pulse-glow {
     0% {

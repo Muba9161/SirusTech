@@ -26,30 +26,35 @@
 
         <h4 class="text-white text-center mt-5 px-3 position-relative z-1">Your journey to tech excellence starts here!</h4>
 
-        <div class="companies-list container mt-4 position-relative z-1">
-            <div class="row justify-content-center align-items-center g-4 text-center">
-                <div class="col-6 col-sm-4 col-md-2">
-                    <img src="images/html.png" class="img-fluid" alt="HTML Icon">
-                    <p>HTML</p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <img src="images/css.png" class="img-fluid" alt="CSS Icon">
-                    <p>CSS</p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <img src="images/js.png" class="img-fluid" alt="JavaScript Icon">
-                    <p>JavaScript</p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <img src="images/python.png" class="img-fluid" alt="Python Icon">
-                    <p>Python</p>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <img src="images/java.png" class="img-fluid" alt="Java Icon">
-                    <p>Java</p>
+        <!-- Wrapper -->
+        <div class="slider-wrapper overflow-hidden py-4">
+            <div class="slider d-flex align-items-center">
+                <!-- Repeat the icons twice for smooth loop -->
+                <div class="slide-track d-flex align-items-center">
+                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
+                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
+                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
+                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
+                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
+
+                    <!-- Duplicate icons for seamless loop -->
+                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
+                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
+                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
+                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
+                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
+
+
+                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
+                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
+                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
+                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
+                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
                 </div>
             </div>
         </div>
+
+
     </section>
 
 
@@ -117,7 +122,8 @@
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
                                         class="fas fa-chart-line"></i>
                                 </div>
-                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-medal"></i>
+                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
+                                        class="fas fa-medal"></i>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +353,7 @@
                         Our trainers don’t lecture, they ignite transformation. <br>
                         Because you deserve more than just a course — you deserve a breakthrough.
                     </h2>
-                    <img src="images/tools group.png" alt="Tools Group" class="img-fluid mt-3 rotating-image"
+                    <img src="{{ asset('images/tools group.png')}}" alt="Tools Group" class="img-fluid mt-3 rotating-image"
                         style="max-width: 100%;">
                 </div>
 
