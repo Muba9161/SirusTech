@@ -369,7 +369,7 @@
                     </ul>
 
                     <div class="text-center text-lg-start mt-4 fadeInLeft">
-                        <a href="tel:+91xxxxxxxxxx" class="btn btn-outline-light px-4 py-2 fw-bold"
+                        <a href="tel:+919214274929" class="btn btn-outline-light px-4 py-2 fw-bold"
                             style="clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 99%, 0 100%, 0% 80%, 0% 20%); background-color: rgb(14, 12, 21); border-radius: 10px;">Call
                             Now</a>
                     </div>
