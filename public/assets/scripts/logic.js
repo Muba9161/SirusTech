@@ -65,26 +65,6 @@ prevButton.addEventListener("click", prevTestimonial);
 
 setInterval(nextTestimonial, 7000); // Changes testimonial every 7 seconds (7000 milliseconds)
 
-// Feedback Form Submission (Client-Side Only)
-const feedbackForm = document.querySelector(".feedback-form");
-
-feedbackForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevents the default form submission (which would reload the page)
-
-    // Get values from the form fields
-    const name = document.getElementById("feedback-name").value;
-    const email = document.getElementById("feedback-email").value;
-    const message = document.getElementById("feedback-message").value;
-
-    // --- IMPORTANT: For a real website, you would send this data to a server ---
-    // This is client-side only for demonstration.
-    // You would typically use fetch() or XMLHttpRequest here to send data to a backend.
-    console.log("Feedback Submitted:", { name, email, message });
-
-    alert("Thank you for your feedback, " + name + "! We appreciate it."); // User-friendly alert
-    feedbackForm.reset(); // Clears the form fields after submission
-});
-
 function toggleMobileNav() {
     const nav = document.getElementById("mobileNav");
     nav.classList.toggle("show");

@@ -14,12 +14,4 @@ class FeedbacksController extends Controller
 
         return view('admin.feedback.index', compact('feedbacks'));
     }
-    public function toggleDisplay($id)
-    {
-        $feedback = Feedback::findOrFail($id);
-        $feedback->display = !$feedback->display;
-        $feedback->save();
-
-        return back()->with('status', 'Feedback visibility updated.');
-    }
 }

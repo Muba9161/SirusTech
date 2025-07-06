@@ -114,7 +114,8 @@
                             <div class="d-flex flex-wrap gap-3 mt-4">
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-video"></i>
                                 </div>
-                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-chart-line"></i>
+                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
+                                        class="fas fa-chart-line"></i>
                                 </div>
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-medal"></i>
                                 </div>
@@ -383,31 +384,16 @@
         <h2 class="text-center mb-5">Our Valued Client Testimonials</h2>
         <div class="testimonial-carousel">
             <div class="testimonial-wrapper d-flex">
-                <div class="testimonial-card active mx-2">
-                    <p>"RoboTech's autonomous drones have revolutionized our warehouse operations. Incredible precision and
-                        efficiency!"</p>
-                    <div class="testimonial-author">- Alex M., Logistics Manager at OmniCorp</div>
-                </div>
-                <div class="testimonial-card mx-2">
-                    <p>"The customer service is top-notch, and their industrial robots are built like tanks. Highly
-                        recommended!"</p>
-                    <div class="testimonial-author">- Sarah L., Production Lead at FutureForge</div>
-                </div>
-                <div class="testimonial-card mx-2">
-                    <p>"We've seen a significant increase in productivity since integrating RoboTech's AI-powered assistants
-                        into our workflow."</p>
-                    <div class="testimonial-author">- David K., CEO of InnovateX</div>
-                </div>
-                <div class="testimonial-card mx-2">
-                    <p>"Their security robots provide unparalleled surveillance and peace of mind. A game-changer for our
-                        facilities."</p>
-                    <div class="testimonial-author">- Emily R., Head of Security at SecureVault</div>
-                </div>
-                <div class="testimonial-card mx-2">
-                    <p>"The custom robotics solution they developed for us exceeded all expectations. Truly experts in their
-                        field."</p>
-                    <div class="testimonial-author">- Mark S., Founder of NextGen Manufacturing</div>
-                </div>
+                @forelse ($feedbacks as $feedback)
+                    <div class="testimonial-card mx-2 {{ $loop->first ? 'active' : '' }}">
+                        <p>"{{ $feedback->message }}"</p>
+                        <div class="testimonial-author">- {{ $feedback->name }}</div>
+                    </div>
+                @empty
+                    <div class="testimonial-card mx-2">
+                        <p>No feedback available at the moment.</p>
+                    </div>
+                @endforelse
             </div>
         </div>
         <div class="testimonial-controls text-center mt-4">
@@ -415,6 +401,7 @@
             <button id="nextTestimonial" class="btn">Next</button>
         </div>
     </section>
+
 
     {{-- <div class="testimonial-carousel">
         <div class="testimonial-wrapper">
@@ -426,28 +413,6 @@
             @endforeach
         </div>
     </div> --}}
-    {{-- <section id="feedback-section">
-        <h2>Share Your Experience with Us</h2>
-
-        @if (session('success'))
-            <p style="color: green;">{{ session('success') }}</p>
-        @endif
-
-        <form class="feedback-form" method="POST" action="{{ route('feedback.store') }}">
-            @csrf
-
-            <label for="feedback-name">Your Name:</label>
-            <input type="text" id="feedback-name" name="name" required>
-
-            <label for="feedback-email">Your Email:</label>
-            <input type="email" id="feedback-email" name="email" required>
-
-            <label for="feedback-message">Your Feedback:</label>
-            <textarea id="feedback-message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Submit Feedback</button>
-        </form>
-    </section> --}}
 
 
 

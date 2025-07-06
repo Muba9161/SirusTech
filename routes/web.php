@@ -9,6 +9,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomepageController::class, 'index'])->name('homepage');
+Route::post('/users', [UserController::class, 'store'])->name('user.store');
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
+
 
 
 Route::get('/dashboard', function () {
@@ -31,8 +34,8 @@ Route::post('/contact/store', [ContactController::class, 'store'])->name('contac
 Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
 Route::post('/feedback/store', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::get('/feedback/show', [FeedbacksController::class, 'index'])->name('admin.feedback.index');
-Route::patch('/admin/feedback/{id}/toggle', [FeedbacksController::class, 'toggleDisplay'])
-    ->name('admin.feedback.toggle');
+Route::delete('/feedback/{id}', [FeedbackController::class, 'destroy'])->name('feedback.destroy');
+
 
 
 require __DIR__.'/auth.php';

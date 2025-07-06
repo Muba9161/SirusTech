@@ -8,9 +8,10 @@ use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
-    public function index(){
-        $testimonials = Feedback::where('display', 1)->latest()->get();
+    public function index()
+    {
+        $feedbacks = Feedback::latest()->get(); // fetch all feedbacks, no display filter
 
-        return view('frontend.homepage.index', compact('testimonials'));
+        return view('frontend.homepage.index', compact('feedbacks'));
     }
 }

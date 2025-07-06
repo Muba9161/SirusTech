@@ -81,7 +81,7 @@
                             href="javascript:void(0)"></a>
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href="{{ route('dashboard') }}">
-                            <img src="../assets/backend/assets/images/brand/logo.png"
+                            <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img desktop-logo" alt="logo">
                             <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img light-logo1" alt="logo">
@@ -204,11 +204,11 @@
                 <div class="app-sidebar">
                     <div class="side-header">
                         <a class="header-brand1" href="{{ route('dashboard') }}">
-                            <img src="../assets/backend/assets/images/brand/logo.png"
+                            <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img desktop-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-1.png"
+                            <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img toggle-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-2.png"
+                            <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img light-logo" alt="logo">
                             <img src="../assets/backend/assets/images/brand/logo-3.png"
                                 class="header-brand-img light-logo1" alt="logo">
@@ -225,6 +225,8 @@
                             <li class="sub-category">
                                 <h3>Tools</h3>
                             </li>
+
+                            <a class="side-menu__item" data-bs-toggle="slide" href="{{route('dashboard')}}"><i class="side-menu__icon fa-solid fa-home"></i><span class="side-menu__label">Dashboard</span><i class="angle fe fe-chevron-right"></i></a>
 
                             <a class="side-menu__item" data-bs-toggle="slide" href="{{route('admin.feedback.index')}}"><i class="side-menu__icon fa-solid fa-user"></i><span class="side-menu__label">Feedbacks</span><i class="angle fe fe-chevron-right"></i></a>
 

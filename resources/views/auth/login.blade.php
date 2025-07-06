@@ -51,7 +51,7 @@
                 <!-- CONTAINER OPEN -->
                 <div class="col col-login mx-auto mt-7">
                     <div class="text-center">
-                        <a href="index.html"><img src="../assets/backend/assets/images/brand/logo-white.png" class="header-brand-img"
+                        <a href="index.html"><img src="../assets/backend/assets/images/brand/logo-3.png" class="header-brand-img"
                                 alt=""></a>
                     </div>
                 </div>
