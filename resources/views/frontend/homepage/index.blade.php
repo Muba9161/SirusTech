@@ -28,30 +28,23 @@
 
         <!-- Wrapper -->
         <div class="slider-wrapper overflow-hidden py-4">
-            <div class="slider d-flex align-items-center">
-                <!-- Repeat the icons twice for smooth loop -->
-                <div class="slide-track d-flex align-items-center">
-                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
-                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
-                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
-                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
-                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
+            <div class="slide-track d-flex">
+                <!-- Repeat icons enough times to ensure seamless loop -->
+                <div class="slide"><img src="images/html.png" alt="HTML" /></div>
+                <div class="slide"><img src="images/css.png" alt="CSS" /></div>
+                <div class="slide"><img src="images/js.png" alt="JS" /></div>
+                <div class="slide"><img src="images/python.png" alt="Python" /></div>
+                <div class="slide"><img src="images/java.png" alt="Java" /></div>
 
-                    <!-- Duplicate icons for seamless loop -->
-                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
-                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
-                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
-                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
-                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
-
-                    <div class="slide"><img src="images/html.png" alt="HTML" /></div>
-                    <div class="slide"><img src="images/css.png" alt="CSS" /></div>
-                    <div class="slide"><img src="images/js.png" alt="JS" /></div>
-                    <div class="slide"><img src="images/python.png" alt="Python" /></div>
-                    <div class="slide"><img src="images/java.png" alt="Java" /></div>
-                </div>
+                <!-- Duplicate icons for smooth looping -->
+                <div class="slide"><img src="images/html.png" alt="HTML" /></div>
+                <div class="slide"><img src="images/css.png" alt="CSS" /></div>
+                <div class="slide"><img src="images/js.png" alt="JS" /></div>
+                <div class="slide"><img src="images/python.png" alt="Python" /></div>
+                <div class="slide"><img src="images/java.png" alt="Java" /></div>
             </div>
         </div>
+
 
 
     </section>
@@ -60,7 +53,7 @@
     <section class="generative-section py-5" id="about">
         <div class="container text-center">
             <h1 class="display-4 text-white mb-3">About SirusTech</h1>
-            <p class="lead text-secondary mb-5">
+            <p class="lead text-white mb-5">
                 We deliver smart digital solutions that drive business growth while equipping individuals with in-demand
                 tech skills.
             </p>
@@ -114,8 +107,8 @@
                     <div class="card bg-dark border-0 position-relative h-100 rounded-4 p-4 text-white">
                         <div class="position-relative z-1">
                             <h2 class="h4">Learn Anywhere. Grow Everywhere</h2>
-                            <p class="text-secondary">Flexible learning, powerful results. Join online, learn for life.</p>
-                            <div class="d-flex flex-wrap gap-3 mt-4">
+                            <p class="text-white">Flexible learning, powerful results. Join online, learn for life.</p>
+                            {{-- <div class="d-flex flex-wrap gap-3 mt-4">
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-video"></i>
                                 </div>
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
@@ -124,7 +117,7 @@
                                 <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
                                         class="fas fa-medal"></i>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <img src="images/service-3.png" alt="" class="img-fluid mt-auto pt-4">
                     </div>
@@ -265,15 +258,21 @@
                         <h2>Wid blocks</h2>
                         <p>Hands-on robotics training using WitBlox kits. Includes pictures, project demos, and interactive
                             content.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
                         <img src="images/IOT image.png" alt="">
-                        <h2>IOT</h2>
+                        <h2>IoT</h2>
                         <p>Learn IoT fundamentals through curated YouTube tutorials, real-world examples, and project ideas.
                         </p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -283,6 +282,9 @@
                         <h2>AI</h2>
                         <p>Intro to AI concepts with visual explanations and examples. Includes images and beginner-friendly
                             content.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -292,6 +294,9 @@
                         <h2>Arduino</h2>
                         <p>Basics of Arduino with YouTube-guided tutorials, example projects, and illustrated components.
                         </p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -300,6 +305,9 @@
                         <img src="images/cyber security image.png" alt="">
                         <h2>Cyber Security</h2>
                         <p>Introduction to cyber threats, data protection, and safe practices online for all age groups.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -308,6 +316,9 @@
                         <img src="images/raspberry.png" alt="">
                         <h2>Raspberry Pi</h2>
                         <p>Get started with Raspberry Pi using step-by-step YouTube resources and beginner projects.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -317,6 +328,9 @@
                         <h2>App Development</h2>
                         <p>Hands-on training to help you learn mobile app development from scratch, covering Android and iOS
                             platforms.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -325,6 +339,9 @@
                         <img src="images/pd.png" alt="">
                         <h2>Personality Development</h2>
                         <p>Soft skills training covering communication, confidence building, and personal growth.</p>
+                        <div class="explore-more">
+                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,7 +364,7 @@
 
                 <div class="col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0 fadeInRight">
                     <h2 class="mb-4 text-center"
-                        style="font-size: 1.5rem; color: rgb(127, 109, 135); max-width: 500px; margin: 0 auto;">
+                        style="font-size: 1.5rem; color: white; max-width: 500px; margin: 0 auto;">
                         We blend skills with confidence and learning with real-life impact. <br>
                         Our trainers don’t lecture, they ignite transformation. <br>
                         Because you deserve more than just a course — you deserve a breakthrough.
@@ -432,6 +449,29 @@
         </div>
     </section>
 
+    <div class="slider-wrapper overflow-hidden py-4 my-4">
+        <div class="slide-track d-flex">
+            <!-- Repeat icons enough times to ensure seamless loop -->
+            <div class="slide"><img src="images/flags/india_flag.jpg" alt="India" /></div>
+            <div class="slide"><img src="images/flags/us_flag.jpg" alt="US" /></div>
+            <div class="slide"><img src="images/flags/spain_flag.jpg" alt="Spain" /></div>
+            <div class="slide"><img src="images/flags/russia_flag.jpg" alt="Russia" /></div>
+            <div class="slide"><img src="images/flags/turkey.jpg" alt="Turkey" /></div>
+            <div class="slide"><img src="images/flags/malaysia.jpg" alt="Malaysia" /></div>
+            <div class="slide"><img src="images/flags/canada.jpg" alt="Canada" /></div>
+            <div class="slide"><img src="images/flags/italy_flag.jpg" alt="Italy" /></div>
+
+            <!-- Duplicate icons for smooth looping -->
+            <div class="slide"><img src="images/flags/india_flag.jpg" alt="India" /></div>
+            <div class="slide"><img src="images/flags/us_flag.jpg" alt="US" /></div>
+            <div class="slide"><img src="images/flags/spain_flag.jpg" alt="Spain" /></div>
+            <div class="slide"><img src="images/flags/russia_flag.jpg" alt="Russia" /></div>
+            <div class="slide"><img src="images/flags/turkey.jpg" alt="Turkey" /></div>
+            <div class="slide"><img src="images/flags/malaysia.jpg" alt="Malaysia" /></div>
+            <div class="slide"><img src="images/flags/canada.jpg" alt="Canada" /></div>
+            <div class="slide"><img src="images/flags/italy_flag.jpg" alt="Italy" /></div>
+        </div>
+    </div>
 
 
     <section class="contact-section" id="contact">

@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     background-color: rgb(14 12 21) !important;
     font-family: monospace !important;
-    color: lightgray !important;
+    color: white !important;
 }
 html {
     scroll-behavior: smooth;
@@ -49,12 +49,12 @@ html {
 }
 
 .navbar-nav .nav-link {
-    color: lightgray !important;
+    color: white !important;
 }
 
 .navbar-nav .nav-link {
     position: relative;
-    color: lightgray !important;
+    color: white !important;
     padding: 5px 12px;
     border-radius: 8px;
     transition: color 0.3s ease;
@@ -63,7 +63,7 @@ html {
 
 /* Create the animated gradient border on hover */
 .navbar-nav .nav-link:hover {
-    color: lightgray !important;
+    color: white !important;
 }
 
 .navbar-nav .nav-link:hover::before {
@@ -469,7 +469,7 @@ html {
 
 .features-card p {
     font-size: 1rem;
-    color: rgb(127, 109, 135);
+    color: white;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -493,7 +493,7 @@ html {
 
 .explore-more a {
     text-decoration: none;
-    color: lightgray;
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
@@ -614,7 +614,7 @@ html {
     border: 1px solid transparent;
     position: relative;
     font-family: "Space Mono", monospace; /* Techy font */
-    color: lightgray; /* Light text color */
+    color: white; /* Light text color */
 }
 
 #testimonials-section h2 {
@@ -658,7 +658,7 @@ html {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: lightgray;
+    color: white;
 }
 
 .testimonial-author {
@@ -776,7 +776,7 @@ html {
 
 .roadmap-card p {
     font-size: 1rem;
-    color: rgb(127, 109, 135);
+    color: white;
     margin-top: 0.5rem;
 }
 
@@ -816,7 +816,7 @@ html {
     inset: 3px;
     border: none;
     background-color: #0e0c15;
-    color: lightgray;
+    color: white;
     border-radius: 10px;
     cursor: pointer;
     clip-path: polygon(
@@ -877,7 +877,7 @@ footer .box-icons {
 }
 
 footer .box-icons a {
-    color: gray;
+    color: white;
     border-radius: 50%;
     font-size: 40px;
     display: flex;
@@ -1188,30 +1188,29 @@ footer .box-icons a:hover {
     pointer-events: none;
     animation: pulse-glow 2s infinite alternate;
 }
-.slider-wrapper {
-    position: relative;
-    width: 100%;
-}
 
-.slider {
+.slider-wrapper {
     width: 100%;
-    overflow: hidden;
+    position: relative;
 }
 
 .slide-track {
-    display: flex;
     animation: scroll 20s linear infinite;
+    width: calc(250px * 10); /* Adjust based on number of slides */
 }
 
 .slide {
-    flex: 0 0 auto;
-    width: 100px; /* adjust icon size */
-    margin: 0 20px;
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide img {
-    width: 100%;
+    width: 80px;
     height: auto;
+    object-fit: contain;
 }
 
 @keyframes scroll {
@@ -1379,7 +1378,7 @@ footer .box-icons a:hover {
 .hamburger span {
     height: 3px;
     width: 25px;
-    background: lightgray;
+    background: white;
     margin: 4px 0;
     border-radius: 2px;
 }
@@ -1398,7 +1397,7 @@ footer .box-icons a:hover {
 }
 
 .mobile-nav a {
-    color: lightgray;
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 18px;
