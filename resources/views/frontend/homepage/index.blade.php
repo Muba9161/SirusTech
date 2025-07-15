@@ -4,12 +4,12 @@
     <section
         class="hero position-relative d-flex flex-column justify-content-center align-items-center overflow-hidden min-vh-100 py-8">
 
-        <img class="hero-blur-image w-100 position-absolute top-0" src="images/hero blur img.png" alt="Hero Blur Background">
-        <img class="hero-icons-image parallax position-absolute w-100" data-speed="4" src="images/hero icons img2.png"
+        <img class="hero-blur-image w-100 position-absolute top-0" src="{{ asset('../images/hero blur img.png') }}" alt="Hero Blur Background">
+        <img class="hero-icons-image parallax position-absolute w-100" data-speed="4" src="{{ asset('../images/hero icons img2.png') }}"
             alt="Hero Icons">
 
         <div class="hero-rings-image">
-            <img src="images/hero rings icon.png" alt="Hero Rings">
+            <img src="{{ asset('../images/hero rings icon.png') }}" alt="Hero Rings">
         </div>
 
         <div class="text-center mt-5 px-3 position-relative z-1">
@@ -20,7 +20,7 @@
 
         <div class="hero-image-box mt-5 d-flex justify-content-center align-items-center mx-auto position-relative z-1">
             <div class="robot-box w-100 h-100 position-relative overflow-hidden rounded-4">
-                <img src="images/robot3.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Robot">
+                <img src="{{ asset('../images/robot3.png') }}" class="img-fluid w-100 h-100 object-fit-cover" alt="Robot">
             </div>
         </div>
 
@@ -30,18 +30,18 @@
         <div class="slider-wrapper overflow-hidden py-4">
             <div class="slide-track d-flex">
                 <!-- Repeat icons enough times to ensure seamless loop -->
-                <div class="slide"><img src="images/html.png" alt="HTML" /></div>
-                <div class="slide"><img src="images/css.png" alt="CSS" /></div>
-                <div class="slide"><img src="images/js.png" alt="JS" /></div>
-                <div class="slide"><img src="images/python.png" alt="Python" /></div>
-                <div class="slide"><img src="images/java.png" alt="Java" /></div>
+                <div class="slide"><img src="{{ asset('../images/html.png') }}" alt="HTML" /></div>
+                <div class="slide"><img src="{{ asset('../images/css.png') }}" alt="CSS" /></div>
+                <div class="slide"><img src="{{ asset('../images/js.png') }}" alt="JS" /></div>
+                <div class="slide"><img src="{{ asset('../images/python.png') }}" alt="Python" /></div>
+                <div class="slide"><img src="{{ asset('../images/java.png') }}" alt="Java" /></div>
 
                 <!-- Duplicate icons for smooth looping -->
-                <div class="slide"><img src="images/html.png" alt="HTML" /></div>
-                <div class="slide"><img src="images/css.png" alt="CSS" /></div>
-                <div class="slide"><img src="images/js.png" alt="JS" /></div>
-                <div class="slide"><img src="images/python.png" alt="Python" /></div>
-                <div class="slide"><img src="images/java.png" alt="Java" /></div>
+                <div class="slide"><img src="{{ asset('../images/html.png') }}" alt="HTML" /></div>
+                <div class="slide"><img src="{{ asset('../images/css.png') }}" alt="CSS" /></div>
+                <div class="slide"><img src="{{ asset('../images/js.png') }}" alt="JS" /></div>
+                <div class="slide"><img src="{{ asset('../images/python.png') }}" alt="Python" /></div>
+                <div class="slide"><img src="{{ asset('../images/java.png') }}" alt="Java" /></div>
             </div>
         </div>
 
@@ -66,21 +66,21 @@
                     <div
                         class="card tall-card bg-dark position-relative overflow-hidden rounded-4 text-white d-flex flex-column flex-md-row align-items-center">
                         <div class="w-100 w-md-0 position-relative h-100">
-                            <img src="images/service-21.png" alt=""
+                            <img src="{{ asset('../images/service-21.png') }}" alt=""
                                 class="img-fluid h-100 w-100 object-fit-cover rounded-4">
                         </div>
                         <div class="w-100 w-md-50 text-center d-flex flex-column justify-content-center h-100 p-4">
                             <h2 class="h3 fw-bold">Code Together. Grow Together.</h2>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Direct
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Direct
                                 Mentorship. Focused Growth
                             </p>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Build Skills
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Build Skills
                                 by Working on Real-Time Projects
                             </p>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Turn
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Turn
                                 Curiosity into Creation with Our Robotics Kit
                             </p>
                         </div>
@@ -90,7 +90,7 @@
                 <!-- Card 2: Left (50%) -->
                 <div class="col-12 col-md-6">
                     <div class="card border-0 bg-dark position-relative overflow-hidden h-100 rounded-4 p-4 text-white">
-                        <img src="images/service-2.png" alt=""
+                        <img src="{{ asset('../images/service-2.png') }}" alt=""
                             class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
                         <div class="position-relative z-1">
                             <h2 class="h4">Websites that Tell Your Story</h2>
@@ -119,7 +119,7 @@
                                 </div>
                             </div> --}}
                         </div>
-                        <img src="images/service-3.png" alt="" class="img-fluid mt-auto pt-4">
+                        <img src="{{ asset('../images/service-3.png') }}" alt="" class="img-fluid mt-auto pt-4">
                     </div>
                 </div>
 
@@ -128,21 +128,21 @@
                     <div
                         class="card tall-card bg-dark position-relative overflow-hidden rounded-4 text-white d-flex flex-column flex-md-row align-items-center">
                         <div class="w-100 w-md-50 position-relative h-100">
-                            <img src="images/service-4.png" alt=""
+                            <img src="{{ asset('../images/service-4.png') }}" alt=""
                                 class="img-fluid h-100 w-100 object-fit-cover rounded-4">
                         </div>
                         <div class="w-100 w-md-50 text-left d-flex flex-column justify-content-center h-100 p-4">
                             <h2 class="h3 fw-bold">Speak Smart. Think Sharp. Lead Strong</h2>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Speak
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Speak
                                 Smart: Speak with style, sway with substance
                             </p>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Think
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Think
                                 Sharp: Quick mind, confident vibe
                             </p>
                             <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="images/Check circle.png" alt="" class="me-2" height="24">Lead
+                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Lead
                                 Strong: Stand tall. Lead loud. Shine bright
                             </p>
                         </div>
@@ -169,10 +169,10 @@
                         </p>
 
                         <div class="explore-more">
-                            <img src="images/feature1.png" alt="">
+                            <img src="{{ asset('../images/feature1.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -182,10 +182,10 @@
                         <h2>Graphic <br> Designing</h2>
                         <p>Eye-catching visuals for digital and print, including logos, banners, and branding assets.</p>
                         <div class="explore-more">
-                            <img src="images/feature1.png" alt="">
+                            <img src="{{ asset('../images/feature2.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -195,10 +195,10 @@
                         <h2>Blockchain <br> Development</h2>
                         <p>Secure and scalable blockchain solutions, including smart contracts and dApp development.</p>
                         <div class="explore-more">
-                            <img src="images/feature2.png" alt="">
+                            <img src="{{ asset('../images/feature3.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -208,10 +208,10 @@
                         <h2>UI/UX <br> Design</h2>
                         <p>User-focused designs that make digital products intuitive, engaging, and easy to navigate.</p>
                         <div class="explore-more">
-                            <img src="images/feature3.png" alt="">
+                            <img src="{{ asset('../images/feature4.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -221,10 +221,10 @@
                         <h2>E-commerce <br> Development</h2>
                         <p>Custom online stores built for performance, sales, and seamless customer experience.</p>
                         <div class="explore-more">
-                            <img src="images/feature4.png" alt="">
+                            <img src="{{ asset('../images/feature5.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -234,10 +234,10 @@
                         <h2>Mobile App <br> Development</h2>
                         <p>High-quality mobile apps for iOS and Android with smooth performance and great design.</p>
                         <div class="explore-more">
-                            <img src="images/feature1.png" alt="">
+                            <img src="{{ asset('../images/feature6.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="images/features back img.gif" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
                 <!-- Training Card -->
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/Widblock.jpg" alt="">
+                        <img src="{{ asset('../images/widblock1.png') }}" alt="">
                         <h2>Wid blocks</h2>
                         <p>Hands-on robotics training using WitBlox kits. Includes pictures, project demos, and interactive
                             content.</p>
@@ -266,7 +266,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/IOT image.png" alt="">
+                        <img src="{{ asset('../images/training2.png') }}" alt="">
                         <h2>IoT</h2>
                         <p>Learn IoT fundamentals through curated YouTube tutorials, real-world examples, and project ideas.
                         </p>
@@ -278,7 +278,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/AI image.png" alt="">
+                        <img src="{{ asset('../images/training3.png') }}" alt="">
                         <h2>AI</h2>
                         <p>Intro to AI concepts with visual explanations and examples. Includes images and beginner-friendly
                             content.</p>
@@ -290,7 +290,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/arduino.png" alt="">
+                        <img src="{{ asset('../images/training4.png') }}" alt="">
                         <h2>Arduino</h2>
                         <p>Basics of Arduino with YouTube-guided tutorials, example projects, and illustrated components.
                         </p>
@@ -302,7 +302,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/cyber security image.png" alt="">
+                        <img src="{{ asset('../images/training5.png') }}" alt="">
                         <h2>Cyber Security</h2>
                         <p>Introduction to cyber threats, data protection, and safe practices online for all age groups.</p>
                         <div class="explore-more">
@@ -313,7 +313,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/raspberry.png" alt="">
+                        <img src="{{ asset('../images/training6.png') }}" alt="">
                         <h2>Raspberry Pi</h2>
                         <p>Get started with Raspberry Pi using step-by-step YouTube resources and beginner projects.</p>
                         <div class="explore-more">
@@ -324,7 +324,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/ad.png" alt="">
+                        <img src="{{ asset('../images/training7.png') }}" alt="">
                         <h2>App Development</h2>
                         <p>Hands-on training to help you learn mobile app development from scratch, covering Android and iOS
                             platforms.</p>
@@ -336,7 +336,7 @@
 
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="roadmap-card autoBlur">
-                        <img src="images/pd.png" alt="">
+                        <img src="{{ asset('../images/training8.png') }}" alt="">
                         <h2>Personality Development</h2>
                         <p>Soft skills training covering communication, confidence building, and personal growth.</p>
                         <div class="explore-more">
@@ -369,7 +369,7 @@
                         Our trainers don’t lecture, they ignite transformation. <br>
                         Because you deserve more than just a course — you deserve a breakthrough.
                     </h2>
-                    <img src="images/tools group.png" alt="Tools Group" class="img-fluid mt-3 rotating-image"
+                    <img src="{{ asset('../images/tools group.png') }}" alt="Tools Group" class="img-fluid mt-3 rotating-image"
                         style="max-width: 100%;">
                 </div>
 
@@ -377,16 +377,16 @@
                     <h1 class="mb-4 text-center text-lg-start fadeInLeft" style="font-size: 3rem;">Why Choose Us?</h1>
 
                     <ul class="list-unstyled fs-5">
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="images/Check circle.png"
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
                                 alt="" style="height: 30px; margin-right: 15px;">Easy Learning</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="images/Check circle.png"
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
                                 alt="" style="height: 30px; margin-right: 15px;">Stunning Projects</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="images/Check circle.png"
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
                                 alt="" style="height: 30px; margin-right: 15px;">Expert-Led Training</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="images/Check circle.png"
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
                                 alt="" style="height: 30px; margin-right: 15px;">Practical, Real-World Learning
                         </li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="images/Check circle.png"
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
                                 alt="" style="height: 30px; margin-right: 15px;">Personalized Growth Journey</li>
                     </ul>
 
@@ -442,9 +442,9 @@
 
     <section class="pricing-section container-fluid py-5 d-flex flex-column justify-content-center align-items-center">
         <div class="pricing-img-box position-relative d-flex justify-content-center align-items-center w-100">
-            <img src="images/pricing-parallax.png" alt="Pricing Background"
+            <img src="{{ asset('../images/pricing-parallax.png') }}" alt="Pricing Background"
                 class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-contain">
-            <img src="images/magical-glob2.png" class="img-fluid" alt="Magical Glob"
+            <img src="{{ asset('../images/magical-glob2.png') }}" class="img-fluid" alt="Magical Glob"
                 style="max-height: 400px; margin-top: 5%;">
         </div>
     </section>
@@ -452,24 +452,24 @@
     <div class="slider-wrapper overflow-hidden py-4 my-4">
         <div class="slide-track d-flex">
             <!-- Repeat icons enough times to ensure seamless loop -->
-            <div class="slide"><img src="images/flags/india_flag.jpg" alt="India" /></div>
-            <div class="slide"><img src="images/flags/us_flag.jpg" alt="US" /></div>
-            <div class="slide"><img src="images/flags/spain_flag.jpg" alt="Spain" /></div>
-            <div class="slide"><img src="images/flags/russia_flag.jpg" alt="Russia" /></div>
-            <div class="slide"><img src="images/flags/turkey.jpg" alt="Turkey" /></div>
-            <div class="slide"><img src="images/flags/malaysia.jpg" alt="Malaysia" /></div>
-            <div class="slide"><img src="images/flags/canada.jpg" alt="Canada" /></div>
-            <div class="slide"><img src="images/flags/italy_flag.jpg" alt="Italy" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/india_flag.jpg') }}" alt="India" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/us_flag.jpg') }}" alt="US" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/spain_flag.jpg') }}" alt="Spain" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/russia_flag.jpg') }}" alt="Russia" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/turkey.jpg' ) }}" alt="Turkey" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/malaysia.jpg') }}" alt="Malaysia" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/canada.jpg') }}" alt="Canada" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/italy_flag.jpg') }}" alt="Italy" /></div>
 
             <!-- Duplicate icons for smooth looping -->
-            <div class="slide"><img src="images/flags/india_flag.jpg" alt="India" /></div>
-            <div class="slide"><img src="images/flags/us_flag.jpg" alt="US" /></div>
-            <div class="slide"><img src="images/flags/spain_flag.jpg" alt="Spain" /></div>
-            <div class="slide"><img src="images/flags/russia_flag.jpg" alt="Russia" /></div>
-            <div class="slide"><img src="images/flags/turkey.jpg" alt="Turkey" /></div>
-            <div class="slide"><img src="images/flags/malaysia.jpg" alt="Malaysia" /></div>
-            <div class="slide"><img src="images/flags/canada.jpg" alt="Canada" /></div>
-            <div class="slide"><img src="images/flags/italy_flag.jpg" alt="Italy" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/india_flag.jpg') }}" alt="India" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/us_flag.jpg') }}" alt="US" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/spain_flag.jpg') }}" alt="Spain" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/russia_flag.jpg') }}" alt="Russia" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/turkey.jpg') }}" alt="Turkey" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/malaysia.jpg') }}" alt="Malaysia" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/canada.jpg') }}" alt="Canada" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/italy_flag.jpg') }}" alt="Italy" /></div>
         </div>
     </div>
 
