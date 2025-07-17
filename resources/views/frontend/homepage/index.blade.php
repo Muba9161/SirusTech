@@ -1,33 +1,33 @@
 @extends('frontend.layout.main')
 
 @section('website-main-section')
-    <section
-        class="hero position-relative d-flex flex-column justify-content-center align-items-center overflow-hidden min-vh-100 py-8">
+    <section class="hero position-relative d-flex flex-column justify-content-center align-items-center min-vh-50 py-8">
 
-        <img class="hero-blur-image w-100 position-absolute top-0" src="{{ asset('../images/hero blur img.png') }}" alt="Hero Blur Background">
-        <img class="hero-icons-image parallax position-absolute w-100" data-speed="4" src="{{ asset('../images/hero icons img2.png') }}"
-            alt="Hero Icons">
+
+        {{-- <img class="hero-blur-image w-100 position-absolute top-0" src="{{ asset('../images/hero blur img.png') }}"
+            alt="Hero Blur Background"> --}}
+        <img class="hero-icons-image parallax position-absolute w-100" data-speed="4"
+            src="{{ asset('../images/hero icons img2.png') }}" alt="Hero Icons">
 
         <div class="hero-rings-image">
             <img src="{{ asset('../images/hero rings icon.png') }}" alt="Hero Rings">
         </div>
 
-        <div class="text-center mt-5 px-3 position-relative z-1">
-            <h1 class="display-4 text-white">Code. Learn. Evolve.</h1>
-            <h3 class="text-white mt-3">Where tech meets talent,<br>learning levels you up.</h3>
-            <button class="btn btn-light mt-4 custom-clip-button">Get Started</button>
-        </div>
-
-        <div class="hero-image-box mt-5 d-flex justify-content-center align-items-center mx-auto position-relative z-1">
-            <div class="robot-box w-100 h-100 position-relative overflow-hidden rounded-4">
-                <img src="{{ asset('../images/robot3.png') }}" class="img-fluid w-100 h-100 object-fit-cover" alt="Robot">
+        <div class="hero-heading text-center mt-5 p-4 position-relative z-1">
+            <h1 class="display-4 text-white">World’s Most Loved
+                Robotics, Coding and AI
+                Labs For Schools</h1>
+            <div class="testimonial-controls button-box2 my-4">
+                <button class="btn btn-outline-light px-6 py-4 fw-bold text-white">Get Started</button>
             </div>
         </div>
 
-        <h4 class="text-white text-center mt-5 px-3 position-relative z-1">Your journey to tech excellence starts here!</h4>
+        <div class="col-md-2 d-flex justify-content-center z-1">
+            <img src="{{ asset('images/magical-glob2.png') }}" alt="Rocket" class="rocket-img">
+        </div>
 
         <!-- Wrapper -->
-        <div class="slider-wrapper overflow-hidden py-4">
+        <div class="slider-wrapper overflow-hidden py-2 my-4 z-1">
             <div class="slide-track d-flex">
                 <!-- Repeat icons enough times to ensure seamless loop -->
                 <div class="slide"><img src="{{ asset('../images/html.png') }}" alt="HTML" /></div>
@@ -45,116 +45,49 @@
             </div>
         </div>
 
+        <div class="hero-gradient"></div>
 
 
     </section>
 
 
-    <section class="generative-section py-5" id="about">
-        <div class="container text-center">
-            <h1 class="display-4 text-white mb-3">About SirusTech</h1>
+    <section class="generative-section py-5 position-relative" id="about">
+        <div class="container text-center position-relative z-2">
+            <h1 class="display-5 text-white mb-3 fw-bold">Why Choose SirusTech?</h1>
             <p class="lead text-white mb-5">
-                We deliver smart digital solutions that drive business growth while equipping individuals with in-demand
-                tech skills.
+                We provide a future-forward platform for:
             </p>
 
-            <div class="row g-4">
-
-                <!-- Card 1: Full Width -->
-                <!-- Card 1 -->
-                <div class="col-12">
-                    <div
-                        class="card tall-card bg-dark position-relative overflow-hidden rounded-4 text-white d-flex flex-column flex-md-row align-items-center">
-                        <div class="w-100 w-md-0 position-relative h-100">
-                            <img src="{{ asset('../images/service-21.png') }}" alt=""
-                                class="img-fluid h-100 w-100 object-fit-cover rounded-4">
-                        </div>
-                        <div class="w-100 w-md-50 text-center d-flex flex-column justify-content-center h-100 p-4">
-                            <h2 class="h3 fw-bold">Code Together. Grow Together.</h2>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Direct
-                                Mentorship. Focused Growth
-                            </p>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Build Skills
-                                by Working on Real-Time Projects
-                            </p>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Turn
-                                Curiosity into Creation with Our Robotics Kit
-                            </p>
-                        </div>
-                    </div>
+            <div class="row justify-content-center align-items-center">
+                <!-- Left Column -->
+                <div class="col-md-5 text-start d-flex flex-column gap-3">
+                    <div class="info-box">Direct Mentorship & Focused Growth</div>
+                    <div class="info-box">Build Skills on Real-Time Projects</div>
+                    <div class="info-box">Practical Learning Experiences</div>
                 </div>
 
-                <!-- Card 2: Left (50%) -->
-                <div class="col-12 col-md-6">
-                    <div class="card border-0 bg-dark position-relative overflow-hidden h-100 rounded-4 p-4 text-white">
-                        <img src="{{ asset('../images/service-2.png') }}" alt=""
-                            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
-                        <div class="position-relative z-1">
-                            <h2 class="h4">Websites that Tell Your Story</h2>
-                            <p class="text-white mt-3 fs-5">
-                                SirusTech is a visionary tech company bridging the gap between powerful software development
-                                and future-ready education.
-                            </p>
-                        </div>
-                    </div>
+                <!-- Center Rocket -->
+                <div class="col-md-2 d-flex justify-content-center my-4 my-md-0">
+                    <img src="{{ asset('images/rocket.png') }}" alt="Rocket" class="rocket-img">
                 </div>
 
-                <!-- Card 3: Right (50%) -->
-                <div class="col-12 col-md-6">
-                    <div class="card bg-dark border-0 position-relative h-100 rounded-4 p-4 text-white">
-                        <div class="position-relative z-1">
-                            <h2 class="h4">Learn Anywhere. Grow Everywhere</h2>
-                            <p class="text-white">Flexible learning, powerful results. Join online, learn for life.</p>
-                            {{-- <div class="d-flex flex-wrap gap-3 mt-4">
-                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i class="fas fa-video"></i>
-                                </div>
-                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
-                                        class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="icon-box bg-gradient text-white p-3 rounded-3 fs-4"><i
-                                        class="fas fa-medal"></i>
-                                </div>
-                            </div> --}}
-                        </div>
-                        <img src="{{ asset('../images/service-3.png') }}" alt="" class="img-fluid mt-auto pt-4">
-                    </div>
+                <!-- Right Column -->
+                <div class="col-md-5 text-start d-flex flex-column gap-3">
+                    <div class="info-box">Tailored Learning Solutions</div>
+                    <div class="info-box">Collaboration and Teamwork</div>
+                    <div class="info-box">Turn Curiosity into Creation</div>
                 </div>
-
-                <!-- Card 4: Full Width -->
-                <div class="col-12">
-                    <div
-                        class="card tall-card bg-dark position-relative overflow-hidden rounded-4 text-white d-flex flex-column flex-md-row align-items-center">
-                        <div class="w-100 w-md-50 position-relative h-100">
-                            <img src="{{ asset('../images/service-4.png') }}" alt=""
-                                class="img-fluid h-100 w-100 object-fit-cover rounded-4">
-                        </div>
-                        <div class="w-100 w-md-50 text-left d-flex flex-column justify-content-center h-100 p-4">
-                            <h2 class="h3 fw-bold">Speak Smart. Think Sharp. Lead Strong</h2>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Speak
-                                Smart: Speak with style, sway with substance
-                            </p>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Think
-                                Sharp: Quick mind, confident vibe
-                            </p>
-                            <p class="d-flex align-items-center justify-content-start fs-5 my-8">
-                                <img src="{{ asset('../images/Check circle.png') }}" alt="" class="me-2" height="24">Lead
-                                Strong: Stand tall. Lead loud. Shine bright
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
+        <!-- Gradient Background Circle -->
+        <div class="bg-gradient-center"></div>
     </section>
+
 
 
     <section class="features-section py-5" id="service">
+
         <div class="container text-center">
             <h1 class="text-white mb-4 fw-bold">Services Provided by Sirus Tech</h1>
 
@@ -198,7 +131,8 @@
                             <img src="{{ asset('../images/feature3.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}"
+                            alt="">
                     </div>
                 </div>
 
@@ -211,7 +145,8 @@
                             <img src="{{ asset('../images/feature4.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}"
+                            alt="">
                     </div>
                 </div>
 
@@ -224,7 +159,8 @@
                             <img src="{{ asset('../images/feature5.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}"
+                            alt="">
                     </div>
                 </div>
 
@@ -237,7 +173,8 @@
                             <img src="{{ asset('../images/feature6.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
                         </div>
-                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}" alt="">
+                        <img class="features-back-img" src="{{ asset('../images/features back img.gif') }}"
+                            alt="">
                     </div>
                 </div>
 
@@ -247,118 +184,196 @@
 
 
     <section class="roadmap-section py-5" id="training">
+
         <div class="container">
             <h1 class="text-center text-white mb-5">Trainings</h1>
 
-            <div class="row g-4 justify-content-center">
-                <!-- Training Card -->
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/widblock1.png') }}" alt="">
-                        <h2>Wid blocks</h2>
-                        <p>Hands-on robotics training using WitBlox kits. Includes pictures, project demos, and interactive
-                            content.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
+            <!-- 1. Wid Blocks -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-robot fa-3x text-warning"></i>
+                        <i class="fas fa-cogs fa-3x text-info"></i>
+                        <i class="fas fa-microchip fa-3x text-success"></i>
+                        <i class="fas fa-tools fa-3x text-light"></i>
+                        <i class="fas fa-bolt fa-3x text-danger"></i>
+                        <i class="fas fa-plug fa-3x text-primary"></i>
+                        <i class="fas fa-microphone fa-3x text-warning"></i>
+                        <i class="fas fa-code-branch fa-3x text-secondary"></i>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training2.png') }}" alt="">
-                        <h2>IoT</h2>
-                        <p>Learn IoT fundamentals through curated YouTube tutorials, real-world examples, and project ideas.
-                        </p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training3.png') }}" alt="">
-                        <h2>AI</h2>
-                        <p>Intro to AI concepts with visual explanations and examples. Includes images and beginner-friendly
-                            content.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training4.png') }}" alt="">
-                        <h2>Arduino</h2>
-                        <p>Basics of Arduino with YouTube-guided tutorials, example projects, and illustrated components.
-                        </p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training5.png') }}" alt="">
-                        <h2>Cyber Security</h2>
-                        <p>Introduction to cyber threats, data protection, and safe practices online for all age groups.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training6.png') }}" alt="">
-                        <h2>Raspberry Pi</h2>
-                        <p>Get started with Raspberry Pi using step-by-step YouTube resources and beginner projects.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training7.png') }}" alt="">
-                        <h2>App Development</h2>
-                        <p>Hands-on training to help you learn mobile app development from scratch, covering Android and iOS
-                            platforms.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="roadmap-card autoBlur">
-                        <img src="{{ asset('../images/training8.png') }}" alt="">
-                        <h2>Personality Development</h2>
-                        <p>Soft skills training covering communication, confidence building, and personal growth.</p>
-                        <div class="explore-more">
-                            <a href="#">Explore More <i class="fas fa-external-link"></i></a>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                    {{-- <h2 class="text-white fw-bold">Wid Blocks</h2> --}}
+                    <h2 class="text-white fw-bold"><span class="typewriter">Wit Blocks</span></h2>
+                    <p class="text-white">Hands-on robotics training using WitBlox kits. Includes project demos and
+                        interactive content.</p>
                 </div>
             </div>
 
+            <!-- 2. IoT -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-network-wired fa-3x text-info"></i>
+                        <i class="fas fa-wifi fa-3x text-warning"></i>
+                        <i class="fas fa-broadcast-tower fa-3x text-success"></i>
+                        <i class="fas fa-microchip fa-3x text-light"></i>
+                        <i class="fas fa-magic fa-3x text-primary"></i>
+                        <i class="fas fa-plug fa-3x text-danger"></i>
+                        <i class="fas fa-code-branch fa-3x text-secondary"></i>
+                        <i class="fas fa-chart-line fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">IoT</h2>
+                    <p class="text-white">Learn IoT fundamentals through curated tutorials, real-world examples, and
+                        hands-on projects.</p>
+                </div>
+            </div>
+
+            <!-- 3. AI -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-brain fa-3x text-warning"></i>
+                        <i class="fas fa-robot fa-3x text-info"></i>
+                        <i class="fas fa-laptop-code fa-3x text-light"></i>
+                        <i class="fas fa-cogs fa-3x text-success"></i>
+                        <i class="fas fa-chart-pie fa-3x text-danger"></i>
+                        <i class="fas fa-eye fa-3x text-primary"></i>
+                        <i class="fas fa-database fa-3x text-secondary"></i>
+                        <i class="fas fa-layer-group fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">Artificial Intelligence</h2>
+                    <p class="text-white">Intro to AI with visual explanations and beginner-friendly modules for
+                        exploration and creativity.</p>
+                </div>
+            </div>
+
+            <!-- 4. Arduino -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-microchip fa-3x text-success"></i>
+                        <i class="fas fa-tools fa-3x text-warning"></i>
+                        <i class="fas fa-code fa-3x text-info"></i>
+                        <i class="fas fa-bolt fa-3x text-danger"></i>
+                        <i class="fas fa-cogs fa-3x text-light"></i>
+                        <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                        <i class="fas fa-wrench fa-3x text-secondary"></i>
+                        <i class="fas fa-terminal fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">Arduino</h2>
+                    <p class="text-white">Basics of Arduino with guided tutorials, real-world projects, and illustrated
+                        components.</p>
+                </div>
+            </div>
+
+            <!-- 5. Cyber Security -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-shield-alt fa-3x text-info"></i>
+                        <i class="fas fa-lock fa-3x text-danger"></i>
+                        <i class="fas fa-user-secret fa-3x text-warning"></i>
+                        <i class="fas fa-bug fa-3x text-success"></i>
+                        <i class="fas fa-key fa-3x text-light"></i>
+                        <i class="fas fa-firewall fa-3x text-secondary"></i>
+                        <i class="fas fa-eye-slash fa-3x text-primary"></i>
+                        <i class="fas fa-hdd fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">Cyber Security</h2>
+                    <p class="text-white">Introduction to cyber threats, data protection, ethical hacking, and digital
+                        safety practices.</p>
+                </div>
+            </div>
+
+            <!-- 6. Raspberry Pi -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-microchip fa-3x text-success"></i>
+                        <i class="fas fa-server fa-3x text-info"></i>
+                        <i class="fas fa-code fa-3x text-light"></i>
+                        <i class="fas fa-cube fa-3x text-primary"></i>
+                        <i class="fas fa-terminal fa-3x text-danger"></i>
+                        <i class="fas fa-project-diagram fa-3x text-secondary"></i>
+                        <i class="fas fa-toolbox fa-3x text-warning"></i>
+                        <i class="fas fa-network-wired fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">Raspberry Pi</h2>
+                    <p class="text-white">Get started with Raspberry Pi using step-by-step guides and practical projects.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 7. App Development -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fab fa-android fa-3x text-success"></i>
+                        <i class="fab fa-apple fa-3x text-light"></i>
+                        <i class="fas fa-code fa-3x text-warning"></i>
+                        <i class="fas fa-mobile-alt fa-3x text-info"></i>
+                        <i class="fas fa-tablet-alt fa-3x text-secondary"></i>
+                        <i class="fas fa-database fa-3x text-primary"></i>
+                        <i class="fas fa-tools fa-3x text-danger"></i>
+                        <i class="fas fa-laptop-code fa-3x text-success"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">App Development</h2>
+                    <p class="text-white">Build mobile apps for Android and iOS using modern tools and frameworks from
+                        scratch.</p>
+                </div>
+            </div>
+
+            <!-- 8. Personality Development -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="tech-icons gap-4">
+                        <i class="fas fa-users fa-3x text-info"></i>
+                        <i class="fas fa-comments fa-3x text-warning"></i>
+                        <i class="fas fa-handshake fa-3x text-success"></i>
+                        <i class="fas fa-microphone-alt fa-3x text-light"></i>
+                        <i class="fas fa-user-check fa-3x text-primary"></i>
+                        <i class="fas fa-star fa-3x text-danger"></i>
+                        <i class="fas fa-user-tie fa-3x text-secondary"></i>
+                        <i class="fas fa-brain fa-3x text-info"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white fw-bold">Personality Development</h2>
+                    <p class="text-white">Boost soft skills, communication, confidence, and leadership with practical
+                        exercises.</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
             <div class="d-flex justify-content-center mt-5">
-                <div class="button-box2">
-                    <button>Call Now</button>
+                <div class="testimonial-controls button-box2">
+                    <button class="btn btn-outline-light px-4 py-2 fw-bold"
+                        style="clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 99%, 0 100%, 0% 80%, 0% 20%); background-color: rgb(14, 12, 21); border-radius: 10px;">Apply
+                        Now</button>
                 </div>
             </div>
+
 
             <div class="roadmap-gradient"></div>
         </div>
     </section>
 
 
-    <section class="chatApp-section container-fluid py-5" id="choose"
-        style="background-color: #0c0a12; color: white;">
+
+    {{-- <section class="chatApp-section container-fluid py-5" id="choose">
         <div class="container">
             <div class="row align-items-center">
 
@@ -369,25 +384,30 @@
                         Our trainers don’t lecture, they ignite transformation. <br>
                         Because you deserve more than just a course — you deserve a breakthrough.
                     </h2>
-                    <img src="{{ asset('../images/tools group.png') }}" alt="Tools Group" class="img-fluid mt-3 rotating-image"
-                        style="max-width: 100%;">
+                    <img src="{{ asset('../images/tools group.png') }}" alt="Tools Group"
+                        class="img-fluid mt-3 rotating-image" style="max-width: 100%;">
                 </div>
 
                 <div class="col-lg-6 order-2 order-lg-1">
                     <h1 class="mb-4 text-center text-lg-start fadeInLeft" style="font-size: 3rem;">Why Choose Us?</h1>
 
                     <ul class="list-unstyled fs-5">
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
-                                alt="" style="height: 30px; margin-right: 15px;">Easy Learning</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
-                                alt="" style="height: 30px; margin-right: 15px;">Stunning Projects</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
-                                alt="" style="height: 30px; margin-right: 15px;">Expert-Led Training</li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
-                                alt="" style="height: 30px; margin-right: 15px;">Practical, Real-World Learning
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img
+                                src="{{ asset('../images/Check circle.png') }}" alt=""
+                                style="height: 30px; margin-right: 15px;">Easy Learning</li>
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img
+                                src="{{ asset('../images/Check circle.png') }}" alt=""
+                                style="height: 30px; margin-right: 15px;">Stunning Projects</li>
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img
+                                src="{{ asset('../images/Check circle.png') }}" alt=""
+                                style="height: 30px; margin-right: 15px;">Expert-Led Training</li>
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img
+                                src="{{ asset('../images/Check circle.png') }}" alt=""
+                                style="height: 30px; margin-right: 15px;">Practical, Real-World Learning
                         </li>
-                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img src="{{ asset('../images/Check circle.png') }}"
-                                alt="" style="height: 30px; margin-right: 15px;">Personalized Growth Journey</li>
+                        <li class="d-flex align-items-center mb-3 fadeInLeft"><img
+                                src="{{ asset('../images/Check circle.png') }}" alt=""
+                                style="height: 30px; margin-right: 15px;">Personalized Growth Journey</li>
                     </ul>
 
                     <div class="text-center text-lg-start mt-4 fadeInLeft">
@@ -399,7 +419,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <section id="testimonials-section" class="container py-5">
@@ -424,30 +444,27 @@
         </div>
     </section>
 
-
-    {{-- <div class="testimonial-carousel">
-        <div class="testimonial-wrapper">
-            @foreach ($testimonials as $index => $testimonial)
-            <div class="testimonial-card {{ $index === 0 ? 'active' : '' }}">
-                <p>"{{ $testimonial->message }}"</p>
-                <div class="testimonial-author">- {{ $testimonial->author }}</div>
+    {{-- <section id="testimonials-section" class="container py-5">
+    <h2 class="text-center mb-5">Our Valued Client Testimonials</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial-wrapper d-flex">
+            @forelse ($feedbacks as $feedback)
+            <div class="testimonial-card mx-2 {{ $loop->first ? 'active' : '' }}">
+                <p>"{{ $feedback->message }}"</p>
+                <div class="testimonial-author">- {{ $feedback->name }}</div>
             </div>
-            @endforeach
+            @empty
+            <div class="testimonial-card mx-2">
+                <p>No feedback available at the moment.</p>
+            </div>
+            @endforelse
         </div>
-    </div> --}}
-
-
-
-
-
-    <section class="pricing-section container-fluid py-5 d-flex flex-column justify-content-center align-items-center">
-        <div class="pricing-img-box position-relative d-flex justify-content-center align-items-center w-100">
-            <img src="{{ asset('../images/pricing-parallax.png') }}" alt="Pricing Background"
-                class="img-fluid position-absolute top-0 start-0 w-100 h-100 object-fit-contain">
-            <img src="{{ asset('../images/magical-glob2.png') }}" class="img-fluid" alt="Magical Glob"
-                style="max-height: 400px; margin-top: 5%;">
-        </div>
-    </section>
+    </div>
+    <div class="testimonial-controls text-center mt-4">
+        <button id="prevTestimonial" class="btn">Previous</button>
+        <button id="nextTestimonial" class="btn">Next</button>
+    </div>
+</section> --}}
 
     <div class="slider-wrapper overflow-hidden py-4 my-4">
         <div class="slide-track d-flex">
@@ -456,7 +473,7 @@
             <div class="slide"><img src="{{ asset('../images/flags/us_flag.jpg') }}" alt="US" /></div>
             <div class="slide"><img src="{{ asset('../images/flags/spain_flag.jpg') }}" alt="Spain" /></div>
             <div class="slide"><img src="{{ asset('../images/flags/russia_flag.jpg') }}" alt="Russia" /></div>
-            <div class="slide"><img src="{{ asset('../images/flags/turkey.jpg' ) }}" alt="Turkey" /></div>
+            <div class="slide"><img src="{{ asset('../images/flags/turkey.jpg') }}" alt="Turkey" /></div>
             <div class="slide"><img src="{{ asset('../images/flags/malaysia.jpg') }}" alt="Malaysia" /></div>
             <div class="slide"><img src="{{ asset('../images/flags/canada.jpg') }}" alt="Canada" /></div>
             <div class="slide"><img src="{{ asset('../images/flags/italy_flag.jpg') }}" alt="Italy" /></div>
