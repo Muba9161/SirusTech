@@ -6,14 +6,14 @@
 
         {{-- <img class="hero-blur-image w-100 position-absolute top-0" src="{{ asset('../images/hero blur img.png') }}"
             alt="Hero Blur Background"> --}}
-        <img class="hero-icons-image parallax position-absolute w-100" data-speed="4"
+        <img class="hero-icons-image parallax position-absolute w-80" data-speed="4"
             src="{{ asset('../images/hero icons img2.png') }}" alt="Hero Icons">
 
         <div class="hero-rings-image">
             <img src="{{ asset('../images/hero rings icon.png') }}" alt="Hero Rings">
         </div>
 
-        <div class="hero-heading text-center mt-5 p-4 position-relative z-1">
+        <div class="hero-heading text-center mt-5 py-4 px-2 position-relative z-1">
             <h1 class="display-4 text-white">World’s Most Loved
                 Robotics, Coding and AI
                 Labs For Schools</h1>
@@ -96,7 +96,7 @@
 
                 <!-- Card 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>Web <br> Designing</h2>
                         <p>We craft clean, responsive website designs that enhance user experience and reflect your brand.
                         </p>
@@ -111,7 +111,7 @@
 
                 <!-- Card 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>Graphic <br> Designing</h2>
                         <p>Eye-catching visuals for digital and print, including logos, banners, and branding assets.</p>
                         <div class="explore-more">
@@ -124,7 +124,7 @@
 
                 <!-- Card 3 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>Blockchain <br> Development</h2>
                         <p>Secure and scalable blockchain solutions, including smart contracts and dApp development.</p>
                         <div class="explore-more">
@@ -138,7 +138,7 @@
 
                 <!-- Card 4 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>UI/UX <br> Design</h2>
                         <p>User-focused designs that make digital products intuitive, engaging, and easy to navigate.</p>
                         <div class="explore-more">
@@ -152,7 +152,7 @@
 
                 <!-- Card 5 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>E-commerce <br> Development</h2>
                         <p>Custom online stores built for performance, sales, and seamless customer experience.</p>
                         <div class="explore-more">
@@ -166,7 +166,7 @@
 
                 <!-- Card 6 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="features-card autoDisplay">
+                    <div class="features-card autoBlur">
                         <h2>Mobile App <br> Development</h2>
                         <p>High-quality mobile apps for iOS and Android with smooth performance and great design.</p>
                         <div class="explore-more">
@@ -180,17 +180,18 @@
 
             </div>
         </div>
+
     </section>
 
 
     <section class="roadmap-section py-5" id="training">
 
         <div class="container">
-            <h1 class="text-center text-white mb-5">Trainings</h1>
+            <h1 class="text-center text-white mb-5 fw-bold">Trainings</h1>
 
             <!-- 1. Wid Blocks -->
             <div class="row align-items-center mb-5">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-robot fa-3x text-warning"></i>
                         <i class="fas fa-cogs fa-3x text-info"></i>
@@ -202,7 +203,7 @@
                         <i class="fas fa-code-branch fa-3x text-secondary"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     {{-- <h2 class="text-white fw-bold">Wid Blocks</h2> --}}
                     <h2 class="text-white fw-bold"><span class="typewriter">Wit Blocks</span></h2>
                     <p class="text-white">Hands-on robotics training using WitBlox kits. Includes project demos and
@@ -212,7 +213,7 @@
 
             <!-- 2. IoT -->
             <div class="row align-items-center mb-5 flex-md-row-reverse">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-network-wired fa-3x text-info"></i>
                         <i class="fas fa-wifi fa-3x text-warning"></i>
@@ -224,7 +225,7 @@
                         <i class="fas fa-chart-line fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">IoT</h2>
                     <p class="text-white">Learn IoT fundamentals through curated tutorials, real-world examples, and
                         hands-on projects.</p>
@@ -233,7 +234,7 @@
 
             <!-- 3. AI -->
             <div class="row align-items-center mb-5">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-brain fa-3x text-warning"></i>
                         <i class="fas fa-robot fa-3x text-info"></i>
@@ -245,7 +246,7 @@
                         <i class="fas fa-layer-group fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Artificial Intelligence</h2>
                     <p class="text-white">Intro to AI with visual explanations and beginner-friendly modules for
                         exploration and creativity.</p>
@@ -254,7 +255,7 @@
 
             <!-- 4. Arduino -->
             <div class="row align-items-center mb-5 flex-md-row-reverse">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-microchip fa-3x text-success"></i>
                         <i class="fas fa-tools fa-3x text-warning"></i>
@@ -266,7 +267,7 @@
                         <i class="fas fa-terminal fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Arduino</h2>
                     <p class="text-white">Basics of Arduino with guided tutorials, real-world projects, and illustrated
                         components.</p>
@@ -275,7 +276,7 @@
 
             <!-- 5. Cyber Security -->
             <div class="row align-items-center mb-5">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-shield-alt fa-3x text-info"></i>
                         <i class="fas fa-lock fa-3x text-danger"></i>
@@ -287,7 +288,7 @@
                         <i class="fas fa-hdd fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Cyber Security</h2>
                     <p class="text-white">Introduction to cyber threats, data protection, ethical hacking, and digital
                         safety practices.</p>
@@ -296,7 +297,7 @@
 
             <!-- 6. Raspberry Pi -->
             <div class="row align-items-center mb-5 flex-md-row-reverse">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-microchip fa-3x text-success"></i>
                         <i class="fas fa-server fa-3x text-info"></i>
@@ -308,7 +309,7 @@
                         <i class="fas fa-network-wired fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Raspberry Pi</h2>
                     <p class="text-white">Get started with Raspberry Pi using step-by-step guides and practical projects.
                     </p>
@@ -317,7 +318,7 @@
 
             <!-- 7. App Development -->
             <div class="row align-items-center mb-5">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fab fa-android fa-3x text-success"></i>
                         <i class="fab fa-apple fa-3x text-light"></i>
@@ -329,7 +330,7 @@
                         <i class="fas fa-laptop-code fa-3x text-success"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">App Development</h2>
                     <p class="text-white">Build mobile apps for Android and iOS using modern tools and frameworks from
                         scratch.</p>
@@ -338,7 +339,7 @@
 
             <!-- 8. Personality Development -->
             <div class="row align-items-center mb-5 flex-md-row-reverse">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fadeInLeft">
                     <div class="tech-icons gap-4">
                         <i class="fas fa-users fa-3x text-info"></i>
                         <i class="fas fa-comments fa-3x text-warning"></i>
@@ -350,7 +351,7 @@
                         <i class="fas fa-brain fa-3x text-info"></i>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Personality Development</h2>
                     <p class="text-white">Boost soft skills, communication, confidence, and leadership with practical
                         exercises.</p>
@@ -492,8 +493,10 @@
 
 
     <section class="contact-section" id="contact">
-        <h1 class="contact-title">Contact SirusTech</h1>
-        <p class="contact-subtitle">We're here to talk robots, AI, and innovation. Drop us a message.</p>
+        <!-- Gradient Background Circle -->
+        <div class="bg-gradient-center"></div>
+        <h1 class="contact-title fw-bold text-white my-4">Contact SirusTech</h1>
+        {{-- <p class="contact-subtitle">We're here to talk robots, AI, and innovation. Drop us a message.</p> --}}
 
         @if (session('success'))
             <p class="contact-status" style="color: #00ffc3;">{{ session('success') }}</p>
@@ -526,6 +529,7 @@
             </div>
             <button type="submit" class="contact-button">Send Message</button>
         </form>
+
     </section>
 
 

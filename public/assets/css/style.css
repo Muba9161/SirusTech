@@ -131,7 +131,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     text-align: center;
 }
 
@@ -204,16 +204,11 @@ html {
     z-index: 1;
     position: absolute;
     top: 8%;
-    /* Initial top offset relative to hero section */
     left: 0;
-    /* Center horizontally relative to parent */
     transform: translateX(-50%);
-    /* Adjust for true horizontal centering */
     width: 100%;
-    /* Start with a percentage width for responsiveness */
     object-fit: cover;
     will-change: transform;
-    /* Hint for browser if JS parallax is active */
 }
 
 /* Main Content Layers - Ensure these are always on top */
@@ -343,13 +338,21 @@ html {
     }
 
     .hero-rings-image {
-        height: 20vh;
-        left: 0;
-        top: 5%;
+        height: 50vh;
+        left: 50%;
+        top: 50%;
     }
-    .hero{
+
+    .hero-rings-image img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    /* .hero {
         overflow: hidden;
-    }
+    } */
+
     .hero-icons-image {
         top: 5%;
         left: 2%;
@@ -387,7 +390,7 @@ html {
 @media (max-width: 767.98px) {
     .hero {
         padding: 2rem 0.5rem;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .hero-blur-image {
@@ -396,17 +399,8 @@ html {
 
     .hero-rings-image {
         height: 10vh;
-        /* Further scaled down for phones */
+        display: none;
         opacity: 0.3;
-    }
-
-    .hero-icons-image {
-        top: 2%;
-        /* Adjusted top for small phones - higher up */
-        width: 95%;
-        /* Wider on small phones to fill space */
-        max-width: unset;
-        /* Allow it to take full width on smaller screens */
     }
 
     .display-4 {
@@ -454,28 +448,68 @@ html {
         opacity: 0.2;
     }
 
+    /* Bottom-Right Circle - Responsive */
+    .hero::after {
+        bottom: -5vh;
+        right: 25vw;
+        width: 50vw;
+        height: 50vh;
+    }
+
+
+    .roadmap-section::after {
+        bottom: -5vh;
+        right: -5vw;
+        width: 25vw;
+        height: 25vh;
+    }
+
+    .generative-section::after {
+        content: '';
+        position: absolute;
+        top: -8vh;
+        left: -25vw;
+        width: 100vw;
+        height: 100vw;
+        filter: blur(12vw);
+        background: radial-gradient(circle, rgba(0, 140, 255, 0.35) 0%, transparent 70%);
+        z-index: 0;
+    }
+
+    .generative-section::before {
+        content: '';
+        background: radial-gradient(circle, rgba(0, 255, 231, 0.35) 0%, transparent 70%);
+        position: absolute;
+        bottom: 29vh;
+        right: 27vw;
+        width: 50vw;
+        height: 50vh;
+        filter: blur(12vw);
+        z-index: 0;
+    }
+
+    .bg-gradient-center {
+        top: -10vh;
+        left: -10vw;
+        width: 80vw;
+        height: 80vw;
+    }
+
     .hero-rings-image {
-        /* display: none;  */
-        height: 20vh;
+        display: none;
+        height: 5vh;
         top: 0;
         left: 0;
     }
 
     .hero-icons-image {
         width: 100%;
-        /* Take full width on very small screens */
         top: 10%;
-        /* Right at the top */
-        left: 2%;
-        /* Pin to left edge */
+        left: 0;
         transform: none;
-        /* Remove transform for simpler positioning */
         box-sizing: border-box;
-        /* Include padding in width calculation */
     }
-    .hero{
-        overflow: hidden;
-    }
+
     .display-4 {
         font-size: 1.8rem;
         width: 90vw;
@@ -570,8 +604,8 @@ html {
     position: absolute;
     top: 50vh;
     left: 50vw;
-    width: 80vw;
-    height: 80vw;
+    width: 50vw;
+    height: 60vh;
     transform: translate(-50%, -50%);
     background: radial-gradient(circle, rgba(0, 255, 231, 0.3) 0%, transparent 70%);
     filter: blur(120px);
@@ -584,6 +618,7 @@ html {
         max-height: 180px;
         margin: 20px 0;
     }
+
 
     .info-box {
         text-align: center;
@@ -788,34 +823,20 @@ html {
 /* Testimonials Section */
 #testimonials-section {
     padding-left: 15px;
-    /* Default Bootstrap container padding */
     padding-right: 15px;
-    /* Default Bootstrap container padding */
     text-align: center;
     margin-top: 50px;
-    /* Adjust as needed */
     margin-bottom: 50px;
-    /* Adjust as needed */
     border-radius: 10px;
     border: 1px solid transparent;
     position: relative;
-    font-family: "Space Mono", monospace;
-    /* Techy font */
-    color: white;
-    /* Light text color */
 }
 
 #testimonials-section h2 {
     font-size: 2.8em;
     margin-bottom: 50px;
-    background: var(--blue-purple-gradient);
-    /* Gradient for heading text */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 0 0 10px rgba(0, 191, 255, 0.5),
-        0 0 10px rgba(138, 43, 226, 0.5);
+    font-weight: bolder;
+    text-transform: capitalize;
 }
 
 .testimonial-carousel {
@@ -984,8 +1005,8 @@ html {
 .roadmap-section::after {
     content: '';
     position: absolute;
-    bottom: -10vh;
-    right: 5vw;
+    bottom: -80vh;
+    right: 0vw;
     width: 80vw;
     height: 80vw;
     background: radial-gradient(circle, rgba(0, 140, 255, 0.35) 0%, transparent 70%);
@@ -1454,10 +1475,16 @@ footer .box-icons a:hover {
 }
 
 .contact-section {
+    position: relative;
     padding: 60px 20px;
     max-width: 600px;
     margin: auto;
     text-align: center;
+}
+
+.contact-section .bg-gradient-center {
+    top: 25vh;
+    left: 45vw;
 }
 
 .contact-title {
