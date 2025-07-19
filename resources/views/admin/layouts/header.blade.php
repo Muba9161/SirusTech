@@ -81,10 +81,10 @@
                             href="javascript:void(0)"></a>
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href="{{ route('dashboard') }}">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img desktop-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img light-logo1" alt="logo">
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo2.png"
+                                class="header-brand-img desktop-logo" alt="logo" style="width:120px;">
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo.png"
+                                class="header-brand-img light-logo1" alt="logo" style="width:120px;">
                         </a>
                         <!-- LOGO -->
                         <div class="main-header-center ms-3 d-none d-lg-block">
@@ -204,14 +204,14 @@
                 <div class="app-sidebar">
                     <div class="side-header">
                         <a class="header-brand1" href="{{ route('dashboard') }}">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img desktop-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img toggle-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img light-logo" alt="logo">
-                            <img src="../assets/backend/assets/images/brand/logo-3.png"
-                                class="header-brand-img light-logo1" alt="logo">
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo2.png"
+                                class="header-brand-img desktop-logo" alt="logo" style="width:120px;" >
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo.png"
+                                class="header-brand-img toggle-logo" alt="logo" style="width:120px;">
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo.png"
+                                class="header-brand-img light-logo" alt="logo" style="width:120px;">
+                            <img src="../assets/backend/assets/images/brand/sirustech_logo.png"
+                                class="header-brand-img light-logo1" alt="logo" style="width:120px;">
                         </a>
                         <!-- LOGO -->
                     </div>

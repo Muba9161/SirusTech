@@ -1,15 +1,48 @@
-<footer class="bg-dark text-light py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h1 class="mb-2 mb-md-0 text-white fs-6 order-2 order-md-1">&copy; 2025, Made by Muba Khan</h1>
+<footer class="text-light py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <!-- Left: Logo -->
+            <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+                <img src="images/sirustech_logo.png" alt="Logo" class="footer-logo">
+            </div>
 
-        <div class="box-icons d-flex justify-content-center order-1 order-md-2 mb-3 mb-md-0">
-            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Center: Tagline or Call to Action -->
+            <div
+                class="col-md-4 mb-3 mb-md-0 d-flex flex-column justify-content-center align-items-center footer-divider">
+                <p class="m-0 fs-2 fw-bold">For Grievances</p>
+                <p class="m-0">
+                    <a href="mailto:info@sirustech.org" class="text-light text-decoration-none">info@sirustech.org</a>
+                    <br />
+                    <a href="tel:+919214274929" class="text-light text-decoration-none">+91-9214274929</a>
+                </p>
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center footer-divider">
+                <p class="m-0 fs-2 fw-bold">For Online Classes</p>
+                <p class="m-0">
+                    <a href="mailto:info@sirustech.org" class="text-light text-decoration-none">info@sirustech.org</a>
+                    <br />
+                    <a href="tel:+919214274929" class="text-light text-decoration-none">+91-9214274929</a>
+                </p>
+                {{-- <div class="d-flex box-icons mt-2">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div> --}}
+            </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <div class="row">
+            <div class="col text-center">
+                <p class="fs-6 m-0 text-white">© 2025 Proudly built in Lucknow, India by SirusTech.</p>
+            </div>
         </div>
     </div>
 </footer>
+
 
 <!-- Toggle Button -->
 <button id="toggleButtons" title="Toggle Buttons">⚙️</button>

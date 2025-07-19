@@ -70,7 +70,8 @@
                                                     </td>
                                                     <td>
                                                         <div class="mt-0 mt-sm-3">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">{{ $feedback->message }}</h6>
+                                                            {{-- <h6 class="">{{  }}</h6> --}}
+                                                            <h6 class="mb-0 fs-14 fw-semibold">{{ \Illuminate\Support\Str::limit(html_entity_decode(strip_tags( $feedback->message)), 70, '...') }}</h6>
                                                         </div>
                                                     </td>
                                                     <td>

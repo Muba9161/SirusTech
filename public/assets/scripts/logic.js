@@ -39,7 +39,7 @@ const totalTestimonials = testimonialCards.length; // Total number of testimonia
 function updateCarousel() {
     // Moves the testimonial-wrapper left by a percentage equal to the current index
     // multiplied by the width of one card (100%)
-    testimonialWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
+    testimonialWrapper.style.transform = `translateX(${-currentIndex * 50}%)`;
 }
 
 // Function to go to the next testimonial

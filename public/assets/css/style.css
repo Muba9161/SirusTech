@@ -131,7 +131,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 
@@ -211,6 +211,7 @@ html {
     will-change: transform;
 }
 
+
 /* Main Content Layers - Ensure these are always on top */
 .text-center,
 .hero-image-box,
@@ -224,7 +225,7 @@ html {
 .display-4 {
     color: white;
     margin-bottom: 0.5rem;
-    width: 50vw;
+    width: 60vw;
 
 }
 
@@ -349,9 +350,9 @@ html {
     }
 
 
-    /* .hero {
+    .hero {
         overflow: hidden;
-    } */
+    }
 
     .hero-icons-image {
         top: 5%;
@@ -552,6 +553,12 @@ html {
     position: relative;
 }
 
+.generative-section p {
+    font-size: 1.5rem;
+    /* font-weight: 700; */
+    text-transform: capitalize;
+}
+
 .info-box {
     border: 2px solid #00ffe7;
     border-radius: 10px;
@@ -635,7 +642,7 @@ html {
     text-align: center;
     /* ✅ Ensures heading aligns center */
     padding: 4rem 1rem;
-    /* ✅ Adds vertical spacing */
+    margin: 25px 0;
 }
 
 .features-section h1 {
@@ -676,7 +683,7 @@ html {
 }
 
 .features-card p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
     line-height: 1.5;
     margin-bottom: 1.5rem;
@@ -851,9 +858,9 @@ html {
 }
 
 .testimonial-card {
-    flex: 0 0 100%;
+    flex: 0 0 50%;
     /* Ensures each card takes full width */
-    min-width: 100%;
+    min-width: 50%;
     background-color: rgb(30, 28, 45);
     /* Darker card background */
     border: 1px solid;
@@ -1022,10 +1029,13 @@ html {
     z-index: 1;
 }
 
+.roadmap-section h1 {
+    font-size: 3rem;
+}
 
 /* Turquoise glowing heading */
 .roadmap-section h2 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 800;
     color: #00ffe7;
     text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
@@ -1035,7 +1045,7 @@ html {
 
 /* Description text */
 .roadmap-section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #ddd;
     max-width: 500px;
 }
@@ -1055,46 +1065,67 @@ html {
     }
 }
 
-
-
 footer {
     width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    color: #fff;
 }
 
-footer h1 {
-    color: white;
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-divider {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 footer .box-icons {
-    gap: 20px;
+    gap: 15px;
+    display: flex;
 }
 
 footer .box-icons a {
-    color: white;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    font-size: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    transition: 0.5s;
-    border: 0.5px solid rgba(107, 88, 116, 0.5);
+    transition: background 0.3s ease;
 }
 
 footer .box-icons a:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.43);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
 
 @media (max-width: 767.98px) {
-    footer .box-icons a {
-        font-size: 30px;
-        padding: 8px;
+    .footer-divider {
+        border-left: none;
+        padding: 10px 0;
     }
 
-    footer h1 {
-        font-size: 0.9rem !important;
+    .footer-logo {
+        max-width: 100px;
+    }
+
+    footer .box-icons {
+        justify-content: center;
+    }
+
+    footer .box-icons a {
+        font-size: 22px;
+        padding: 8px;
     }
 }
+
 
 /* Auto Animate */
 
@@ -1180,7 +1211,7 @@ footer .box-icons a:hover {
 /* Initially hidden but still take up no space and not clickable */
 #goTopBtn,
 #whatsappBtn,
-#chatbotBtn {
+    {
     opacity: 0;
     transform: scale(0.8);
     visibility: hidden;
@@ -1251,8 +1282,8 @@ footer .box-icons a:hover {
 #chatbotBtn {
     z-index: 5;
     position: fixed;
-    bottom: 160px;
-    right: 20px;
+    bottom: 20px;
+    right: 85px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1269,8 +1300,8 @@ footer .box-icons a:hover {
 #whatsappBtn {
     z-index: 5;
     position: fixed;
-    bottom: 235px;
-    right: 26px;
+    bottom: 94px;
+    right: 90px;
     width: 50px;
     height: 50px;
     background-color: #25d366;
@@ -1397,17 +1428,17 @@ footer .box-icons a:hover {
 .slider-wrapper {
     width: 100%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .slide-track {
     animation: scroll 20s linear infinite;
-    width: calc(250px * 10);
+    width: calc(150px * 10);
     /* Adjust based on number of slides */
 }
 
 .slide {
-    width: 250px;
+    width: 150px;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -1476,10 +1507,12 @@ footer .box-icons a:hover {
 
 .contact-section {
     position: relative;
-    padding: 60px 20px;
+    padding: 20px;
     max-width: 600px;
     margin: auto;
     text-align: center;
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
 }
 
 .contact-section .bg-gradient-center {
@@ -1490,7 +1523,8 @@ footer .box-icons a:hover {
 .contact-title {
     font-size: 2.5rem;
     color: #00ffff;
-    margin-bottom: 10px;
+    margin: 40px 0;
+    padding: 15px 0;
 }
 
 .contact-subtitle {
@@ -1524,7 +1558,6 @@ footer .box-icons a:hover {
 .contact-input:focus,
 .contact-textarea:focus {
     border-color: #00ffff;
-    background-color: #111827;
     outline: none;
 }
 
@@ -1536,7 +1569,6 @@ footer .box-icons a:hover {
     color: #888;
     pointer-events: none;
     transition: all 0.2s ease;
-    background: #0f0f1a;
     padding: 0 4px;
     font-size: 1.2rem;
 }

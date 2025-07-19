@@ -14,15 +14,13 @@
         </div>
 
         <div class="hero-heading text-center mt-5 py-4 px-2 position-relative z-1">
-            <h1 class="display-4 text-white">World’s Most Loved
-                Robotics, Coding and AI
-                Labs For Schools</h1>
-            <div class="testimonial-controls button-box2 my-4">
-                <button class="btn btn-outline-light px-6 py-4 fw-bold text-white">Get Started</button>
+            <h1 class="display-4 text-white">World's Best Student Training in Robotics, Coding & AI</h1>
+            <div class="testimonial-controls button-box2 my-8">
+                <button class="btn btn-outline-light px-3 py-3 fw-bold text-white">Get Started</button>
             </div>
         </div>
 
-        <div class="col-md-2 d-flex justify-content-center z-1">
+        <div class="col-md-2 d-flex justify-content-center z-1 my-4">
             <img src="{{ asset('images/magical-glob2.png') }}" alt="Rocket" class="rocket-img">
         </div>
 
@@ -42,6 +40,11 @@
                 <div class="slide"><img src="{{ asset('../images/js.png') }}" alt="JS" /></div>
                 <div class="slide"><img src="{{ asset('../images/python.png') }}" alt="Python" /></div>
                 <div class="slide"><img src="{{ asset('../images/java.png') }}" alt="Java" /></div>
+                <div class="slide"><img src="{{ asset('../images/html.png') }}" alt="HTML" /></div>
+                <div class="slide"><img src="{{ asset('../images/css.png') }}" alt="CSS" /></div>
+                <div class="slide"><img src="{{ asset('../images/js.png') }}" alt="JS" /></div>
+                <div class="slide"><img src="{{ asset('../images/python.png') }}" alt="Python" /></div>
+                <div class="slide"><img src="{{ asset('../images/java.png') }}" alt="Java" /></div>
             </div>
         </div>
 
@@ -51,7 +54,7 @@
     </section>
 
 
-    <section class="generative-section py-5 position-relative" id="about">
+    <section class="generative-section position-relative" id="about">
         <div class="container text-center position-relative z-2">
             <h1 class="display-5 text-white mb-3 fw-bold">Why Choose SirusTech?</h1>
             <p class="lead text-white mb-5">
@@ -61,9 +64,9 @@
             <div class="row justify-content-center align-items-center">
                 <!-- Left Column -->
                 <div class="col-md-5 text-start d-flex flex-column gap-3">
-                    <div class="info-box">Direct Mentorship & Focused Growth</div>
-                    <div class="info-box">Build Skills on Real-Time Projects</div>
-                    <div class="info-box">Practical Learning Experiences</div>
+                    <div class="info-box">Learn Future-Ready Tech Skills That Today’s World Demands</div>
+                    <div class="info-box">Build Real Projects That Showcase Your Talent and Creativity</div>
+                    <div class="info-box">Achieve Career Goals-Be it Jobs, Freelancing, or Startups</div>
                 </div>
 
                 <!-- Center Rocket -->
@@ -73,9 +76,9 @@
 
                 <!-- Right Column -->
                 <div class="col-md-5 text-start d-flex flex-column gap-3">
-                    <div class="info-box">Tailored Learning Solutions</div>
-                    <div class="info-box">Collaboration and Teamwork</div>
-                    <div class="info-box">Turn Curiosity into Creation</div>
+                    <div class="info-box">Enjoy a Personalized Learning Experience Designed for Students</div>
+                    <div class="info-box">Get Mentored by Industry Experts with Real Experience</div>
+                    <div class="info-box">Grow in Confidence with Communication & Leadership Skills</div>
                 </div>
             </div>
         </div>
@@ -86,13 +89,13 @@
 
 
 
-    <section class="features-section py-5" id="service">
+    <section class="features-section py-4" id="service">
 
         <div class="container text-center">
-            <h1 class="text-white mb-4 fw-bold">Services Provided by Sirus Tech</h1>
+            <h1 class="text-white my-8 fw-bold">Services Provided by Sirus Tech</h1>
 
             <!-- Feature Cards Grid -->
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 my-4 justify-content-center">
 
                 <!-- Card 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -126,7 +129,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="features-card autoBlur">
                         <h2>Blockchain <br> Development</h2>
-                        <p>Secure and scalable blockchain solutions, including smart contracts and dApp development.</p>
+                        <p>Secure and scalable blockchain solutions, including smart contracts and App development.</p>
                         <div class="explore-more">
                             <img src="{{ asset('../images/feature3.png') }}" alt="">
                             <a href="#">Explore More <i class="fas fa-link"></i></a>
@@ -206,8 +209,7 @@
                 <div class="col-md-6 fadeInRight">
                     {{-- <h2 class="text-white fw-bold">Wid Blocks</h2> --}}
                     <h2 class="text-white fw-bold"><span class="typewriter">Wit Blocks</span></h2>
-                    <p class="text-white">Hands-on robotics training using WitBlox kits. Includes project demos and
-                        interactive content.</p>
+                    <p class="text-white">Boost critical thinking and logical reasoning through brain-stimulating challenges and real-life problem scenarios.</p>
                 </div>
             </div>
 
@@ -226,9 +228,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 fadeInRight">
-                    <h2 class="text-white fw-bold">IoT</h2>
-                    <p class="text-white">Learn IoT fundamentals through curated tutorials, real-world examples, and
-                        hands-on projects.</p>
+                    <h2 class="text-white fw-bold">Internet Of Things (IoT)</h2>
+                    <p class="text-white">Connect the digital with the physical world. Learn to build smart devices that communicate over the internet using sensors and cloud integrationAI.</p>
                 </div>
             </div>
 
@@ -247,9 +248,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 fadeInRight">
-                    <h2 class="text-white fw-bold">Artificial Intelligence</h2>
-                    <p class="text-white">Intro to AI with visual explanations and beginner-friendly modules for
-                        exploration and creativity.</p>
+                    <h2 class="text-white fw-bold">Artificial Intelligence (AI)</h2>
+                    <p class="text-white">Step into the world of smart machines. Learn how AI works, explore machine learning, and develop models that adapt and learn.</p>
                 </div>
             </div>
 
@@ -269,8 +269,7 @@
                 </div>
                 <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Arduino</h2>
-                    <p class="text-white">Basics of Arduino with guided tutorials, real-world projects, and illustrated
-                        components.</p>
+                    <p class="text-white">Build your own interactive electronics! Master the basics of microcontroller programming and hardware interfacing with Arduino boards.</p>
                 </div>
             </div>
 
@@ -283,15 +282,14 @@
                         <i class="fas fa-user-secret fa-3x text-warning"></i>
                         <i class="fas fa-bug fa-3x text-success"></i>
                         <i class="fas fa-key fa-3x text-light"></i>
-                        <i class="fas fa-firewall fa-3x text-secondary"></i>
+                        <i class="fas fa-shield-virus fa-3x text-secondary"></i>
                         <i class="fas fa-eye-slash fa-3x text-primary"></i>
                         <i class="fas fa-hdd fa-3x text-info"></i>
                     </div>
                 </div>
                 <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Cyber Security</h2>
-                    <p class="text-white">Introduction to cyber threats, data protection, ethical hacking, and digital
-                        safety practices.</p>
+                    <p class="text-white">Learn how to protect data, networks, and systems. Master ethical hacking, encryption, and digital security fundamentals.</p>
                 </div>
             </div>
 
@@ -311,7 +309,7 @@
                 </div>
                 <div class="col-md-6 fadeInRight">
                     <h2 class="text-white fw-bold">Raspberry Pi</h2>
-                    <p class="text-white">Get started with Raspberry Pi using step-by-step guides and practical projects.
+                    <p class="text-white">Dive into computing with the powerful Raspberry Pi. Learn to build real-world applications from automation to media servers.
                     </p>
                 </div>
             </div>
@@ -331,9 +329,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 fadeInRight">
-                    <h2 class="text-white fw-bold">App Development</h2>
-                    <p class="text-white">Build mobile apps for Android and iOS using modern tools and frameworks from
-                        scratch.</p>
+                    <h2 class="text-white fw-bold">IOS & Android Development</h2>
+                    <p class="text-white">Design and develop fully functional mobile applications. From UI design to backend logic, become an app creator from scratch.</p>
                 </div>
             </div>
 
@@ -352,16 +349,15 @@
                     </div>
                 </div>
                 <div class="col-md-6 fadeInRight">
-                    <h2 class="text-white fw-bold">Personality Development</h2>
-                    <p class="text-white">Boost soft skills, communication, confidence, and leadership with practical
-                        exercises.</p>
+                    <h2 class="text-white fw-bold">Professional Communication</h2>
+                    <p class="text-white">Unlock the leader in you! Enhance your communication, confidence, time management, public speaking, and interpersonal skills.</p>
                 </div>
             </div>
 
             <!-- Call to Action -->
             <div class="d-flex justify-content-center mt-5">
                 <div class="testimonial-controls button-box2">
-                    <button class="btn btn-outline-light px-4 py-2 fw-bold"
+                    <button class="btn btn-outline-light px-4 py-2 fw-bold text-white"
                         style="clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 99%, 0 100%, 0% 80%, 0% 20%); background-color: rgb(14, 12, 21); border-radius: 10px;">Apply
                         Now</button>
                 </div>
@@ -424,7 +420,7 @@
 
 
     <section id="testimonials-section" class="container py-5">
-        <h2 class="text-center mb-5">Our Valued Client Testimonials</h2>
+        <h2 class="text-center mb-5">Testimonials</h2>
         <div class="testimonial-carousel">
             <div class="testimonial-wrapper d-flex">
                 @forelse ($feedbacks as $feedback)
@@ -440,8 +436,8 @@
             </div>
         </div>
         <div class="testimonial-controls text-center mt-4">
-            <button id="prevTestimonial" class="btn">Previous</button>
-            <button id="nextTestimonial" class="btn">Next</button>
+            <button id="prevTestimonial" class="btn text-white">Previous</button>
+            <button id="nextTestimonial" class="btn text-white">Next</button>
         </div>
     </section>
 
@@ -467,7 +463,8 @@
     </div>
 </section> --}}
 
-    <div class="slider-wrapper overflow-hidden py-4 my-4">
+    <div class="slider-wrapper overflow-hidden py-4 my-4 slider-heading">
+        <h1 class="text-center mb-5 fw-bold">Empowering  Education Globally</h1>
         <div class="slide-track d-flex">
             <!-- Repeat icons enough times to ensure seamless loop -->
             <div class="slide"><img src="{{ asset('../images/flags/india_flag.jpg') }}" alt="India" /></div>
@@ -492,10 +489,10 @@
     </div>
 
 
-    <section class="contact-section" id="contact">
+    <section class="contact-section my-4" id="contact">
         <!-- Gradient Background Circle -->
         <div class="bg-gradient-center"></div>
-        <h1 class="contact-title fw-bold text-white my-4">Contact SirusTech</h1>
+        <h1 class="contact-title fw-bold text-white">Contact SirusTech</h1>
         {{-- <p class="contact-subtitle">We're here to talk robots, AI, and innovation. Drop us a message.</p> --}}
 
         @if (session('success'))
@@ -517,6 +514,13 @@
                 <input type="email" class="contact-input" id="email" name="email" required placeholder=" " />
                 <label for="email" class="contact-label">Your Email</label>
                 @error('email')
+                    <small style="color: red;">{{ $message }}</small>
+                @enderror
+            </div>
+            <div class="form-group">
+                <input type="text" class="contact-input" id="phone" name="phone" required placeholder=" " />
+                <label for="phone" class="contact-label">Your WhatsApp Number</label>
+                @error('phone')
                     <small style="color: red;">{{ $message }}</small>
                 @enderror
             </div>

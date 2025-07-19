@@ -49,6 +49,8 @@
                                                 <th class="bg-transparent border-bottom-0">
                                                     Name</th>
                                                 <th class="bg-transparent border-bottom-0">
+                                                    WhatsApp Number</th>
+                                                <th class="bg-transparent border-bottom-0">
                                                     Registered On</th>
                                                 <th class="bg-transparent border-bottom-0">
                                                     Message</th>
@@ -74,6 +76,14 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex">
+                                                            <div class="ms-3 mt-0 mt-sm-2 d-block">
+                                                                <h6 class="mb-0 fs-14 fw-semibold">
+                                                                    {{$contact->phone}}</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex">
                                                             <div class="mt-0 mt-sm-3 d-block">
                                                                 <h6 class="mb-0 fs-14 fw-semibold">
                                                                     {{$contact->created_at}}</h6>
@@ -83,8 +93,7 @@
                                                     <td>
                                                         <div class="d-flex">
                                                             <div class="mt-0 mt-sm-3 d-block">
-                                                                <h6 class="mb-0 fs-14 fw-semibold">
-                                                                    {{$contact->message}}</h6>
+                                                                <h6 class="mb-0 fs-14 fw-semibold">{{ \Illuminate\Support\Str::limit(html_entity_decode(strip_tags( $contact->message)), 20, '...') }}</h6>
                                                             </div>
                                                         </div>
                                                     </td>
